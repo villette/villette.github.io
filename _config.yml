@@ -1,6 +1,6 @@
 # Global configuration
 source:  ./_source
-destination: ./_output
+destination: ./_site
 layouts: ./_layouts
 defaults:
   -
