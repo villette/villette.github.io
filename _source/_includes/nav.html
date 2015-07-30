@@ -1,0 +1,17 @@
+<ul class="nav nav-pills nav-stacked menu menu-big">
+  <li {% if page.id == 'home' %}class="active"{% endif %}>
+    <a href="/" class="h2">Accueil</a>
+  </li>
+
+  <li {% if page.id == 'portfolio' %}class="active"{% endif %}>
+    <a href="/portfolio" class="h2">Portfolio</a>
+  </li>
+
+  <li {% if page.id == 'resume' %}class="active"{% endif %}>
+    <a href="/resume" class="h2">CV</a>
+  </li>
+
+  <li {% if page.id == 'contact' %}class="active"{% endif %}>
+    <a href="/contact" class="h2">Contact</a>
+  </li>
+</ul>

@@ -1,0 +1,47 @@
+- image: floe
+  www: http://www.floedesign.ca
+  title: Floe Design + Technologies
+
+- image: rugbymontreal
+  www: http://www.xvdemontreal.com
+  title: XV de Montréal
+
+- image: medidata
+  www: http://www.mdsol.com
+  title: Medidata Solutions
+
+- image: wada
+  www: http://www.wada-ama.org
+  title: World Anti Doping Agency
+
+- image: vortex
+  www: http://www.vortexconseils.ca
+  title: Vortex Conseils
+
+- image: dtr
+  www: http://www.tetesrasees.com
+  title: Défi Têtes Rasées Leucan
+
+- image: ds
+  www: http://www.defiski.com
+  title: Défi Ski Leucan
+
+- image: intercontinental
+  www: http://montreal.intercontinental.com
+  title: Hotel Intercontinental
+
+- image: clubmed
+  www: http://www.clubmedta.com
+  title: Club Med Spécialistes
+
+- image: viarail
+  www: http://www.viarail.ca
+  title: VIA Rail
+
+- image: platania
+  www: http://www.platania.ca
+  title: Platania
+
+- image: carworx
+  www: http://www.carworx.net
+  title: CarWorx

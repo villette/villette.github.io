@@ -1,0 +1,16 @@
+---
+id: portfolio
+title: Portfolio
+permalink: portfolio/
+---
+
+{% for project in site.data.projects %}
+<div class="col-md-6">
+  <div class="project">
+    <a href={{ project.www }} target="_blank">
+      <span class="text-center">{{ project.title }}<em>{{ project.www }}</em></span>
+      <img class="img-responsive" src="/img/portfolio/{{ project.image }}.png" alt="title">
+    </a>
+  </div>
+</div>
+{% endfor %}

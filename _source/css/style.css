@@ -1,0 +1,31 @@
+body { background-color: #000000; font-family: Aller, Helvetica, sans-serif; font-size: 15px; color: #FFFFFF; letter-spacing: 0.8px; }
+
+div.header { margin-bottom: 30px; }
+
+ul.menu-big li:first-of-type a { margin-top: 0; }
+ul.menu-small li { margin-left: 15px; }
+
+ul.menu li a,
+ul.pager li a { color: #666666; }
+ul.menu li a:hover,
+ul.menu li.active a,
+ul.menu li.active a:hover { color: #FFFFFF; background-color: #333333; }
+
+div.project { border: 3px solid #EEEEEE; margin-bottom: 30px; }
+  div.project a { display: block; position: relative; }
+    div.project a img { position: relative; }
+    div.project a span { display: none; font-weight: bold; font-size: 20px; height: 100%; padding-top: 25%; position: absolute; width: 100%; z-index: 100; background-color: rgba(15, 15, 15, 0.6); color: #FFFFFF; text-shadow: #000000 0px 0px 20px; }
+      div.project a span em { display: block; font-weight: normal; font-size: 13px; color: #CCCCCC; }
+
+div.resume { color: #CCCCCC; }
+  div.resume div.section { margin-bottom: 40px; }
+
+  div.resume h3 { color: #666666; }
+  div.resume h4 { font-size: 16px; }
+  div.resume ul { margin-bottom: 25px; }
+    div.resume ul li { margin-bottom: 5px; }
+
+form.contact img.social { margin-right: 5px; }
+
+div.footer { margin-top: 30px; margin-bottom: 30px; }
+  div.footer div.copyright { padding-top: 10px; padding-bottom: 10px; }
