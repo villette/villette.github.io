@@ -1,16 +1,8 @@
 # Global configuration
-source:  ./_source
-destination: ./_site
-layouts: ./_layouts
 defaults:
   -
-    scope:
-      path: ""
-      type: pages
     values:
       layout: default
-collections:
-  - projects
 
 # Site settings
 title: Pierre Villette
