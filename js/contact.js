@@ -1,12 +1,6 @@
 $(document).ready(function() {
-  // Project thumbnails animation
-  $('div.project').mouseenter(function(e) {
-    $(this).children('a').children('span').fadeIn(200);
-  });
 
-  $('div.project').mouseleave(function(e) {
-    $(this).children('a').children('span').fadeOut(200);
-  });
+  $(window).trigger('hashchange');
 
   // Handle form with AJAX
   $('form.contact').submit(function(e) {
@@ -37,4 +31,5 @@ $(document).ready(function() {
       },
     });
   });
+
 });

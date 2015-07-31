@@ -3,6 +3,9 @@ defaults:
   -
     values:
       layout: default
+exclude:
+  - Gemfile
+  - Gemfile.lock
 
 # Site settings
 title: Pierre Villette

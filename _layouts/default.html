@@ -40,7 +40,8 @@
 
     <script type="text/javascript" src="//code.jquery.com/jquery.js"></script>
     <script type="text/javascript" src="//maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
-    <script type="text/javascript" src="/js/scripts.js"></script>
+    <script type="text/javascript" src="//cdnjs.cloudflare.com/ajax/libs/jquery.ba-bbq/1.2.1/jquery.ba-bbq.min.js"></script>
+    {% if page.js %}<script type="text/javascript" src="/js/{{ page.js }}"></script>{% endif %}
   </body>
 
 </html>
