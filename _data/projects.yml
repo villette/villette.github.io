@@ -1,4 +1,8 @@
 -
+  - image: digitalnyc
+    www: http://www.digital.nyc
+    title: Digital.NYC
+
   - image: floe
     www: http://www.floedesign.ca
     title: Floe Design + Technologies
@@ -11,11 +15,11 @@
     www: http://www.mdsol.com
     title: Medidata Solutions
 
+-
   - image: wada
     www: http://www.wada-ama.org
     title: World Anti Doping Agency
 
--
   - image: vortex
     www: http://www.vortexconseils.ca
     title: Vortex Conseils
@@ -28,10 +32,10 @@
     www: http://www.defiski.com
     title: Défi Ski Leucan
 
+-
   - image: intercontinental
     www: http://montreal.intercontinental.com
     title: Hotel Intercontinental
--
 
   - image: clubmed
     www: http://www.clubmedta.com
@@ -45,6 +49,7 @@
     www: http://www.platania.ca
     title: Platania
 
+-
   - image: carworx
     www: http://www.carworx.net
     title: CarWorx

@@ -5,31 +5,35 @@ permalink: portfolio/
 js: portfolio.js
 ---
 
-<div class="portfolio">
-  {% for group in site.data.projects %}
-  <div class="page-{{ forloop.index }} project-group">
-    {% for project in group %}
-    <div class="col-md-6">
-      <div class="project">
-        <a href={{ project.www }} target="_blank">
-          <span class="text-center">{{ project.title }}<em>{{ project.www }}</em></span>
-          <img class="img-responsive" src="/img/portfolio/{{ project.image }}.png" alt="title">
-        </a>
+<div class="row">
+  <div class="portfolio">
+    {% for group in site.data.projects %}
+    <div class="page-{{ forloop.index }} project-group">
+      {% for project in group %}
+      <div class="col-md-6">
+        <div class="project">
+          <a href={{ project.www }} target="_blank">
+            <span class="text-center">{{ project.title }}<em>{{ project.www }}</em></span>
+            <img class="img-responsive" src="/img/portfolio/{{ project.image }}.png" alt="title">
+          </a>
+        </div>
       </div>
+      {% endfor %}
     </div>
     {% endfor %}
   </div>
-  {% endfor %}
 </div>
 
-<nav class="text-center">
-  <ul class="pagination">
-    <li class="previous"><a href="#">&laquo;</a></li>
-    {% for group in site.data.projects %}
-    <li{% if forloop.index == 1 %} class="first"{% elsif forloop.rindex == 1 %} class="last"{% endif %}>
-      <a href="#page-{{ forloop.index }}">{{ forloop.index }}</a>
-    </li>
-    {% endfor %}
-    <li class="next"><a href="#">&raquo;</a></li>
-  </ul>
-</nav>
+<div class="row">
+  <nav class="text-center">
+    <ul class="pagination">
+      <li class="previous"><a href="#">&laquo;</a></li>
+      {% for group in site.data.projects %}
+      <li{% if forloop.index == 1 %} class="first"{% elsif forloop.rindex == 1 %} class="last"{% endif %}>
+        <a href="#page-{{ forloop.index }}">{{ forloop.index }}</a>
+      </li>
+      {% endfor %}
+      <li class="next"><a href="#">&raquo;</a></li>
+    </ul>
+  </nav>
+</div>
