@@ -4,12 +4,15 @@ div.header { margin-bottom: 30px; }
 
 ul.menu-big li:first-of-type a { margin-top: 0; }
 ul.menu-small li { margin-left: 15px; }
+ul.menu-small li:first-of-type { margin-left: 0; }
 
 ul.menu li a,
 ul.pager li a { color: #666666; }
 ul.menu li a:hover,
 ul.menu li.active a,
 ul.menu li.active a:hover { color: #FFFFFF; background-color: #333333; }
+
+div.portfolio div.show-more button { border-color: #333333; background-color: #333333; color: #FFFFFF; }
 
 div.project { border: 3px solid #EEEEEE; margin-bottom: 30px; }
   div.project a { display: block; position: relative; }
