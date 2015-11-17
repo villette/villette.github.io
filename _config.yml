@@ -1,11 +1,42 @@
 # Global configuration
 defaults:
   -
+    scope:
+      path: en
     values:
+      lang:
+        code: en
+        name: English
       layout: default
+
+  -
+    scope:
+      path: fr
+    values:
+      lang:
+        code: fr
+        name: Français
+      layout: default
+
+  -
+    scope:
+      path: es
+    values:
+      lang:
+        code: es
+        name: Español
+      layout: default
+
 exclude:
   - Gemfile
   - Gemfile.lock
 
 # Site settings
 title: Pierre Villette
+
+# Translations
+t:
+  copyright:
+    fr: Tous droits réservés
+    en: All rights reserved
+    es: Todos los derechos reservados
