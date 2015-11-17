@@ -6,8 +6,8 @@ weight: 15
 js: contact.js
 ---
 
-<form action="//formspree.io/villette.pierre@gmail.com" method="post" class="contact">
-  <div id="form">
+<form action="//formspree.io/{{ site.email }}" method="post" class="contact">
+  <div id="form" data-success="Votre message a bien été envoyé." data-error="Une erreur est apparue, veuillez réessayer plus tard.">
     <div class="form-group">
       <label for="input-name" class="required">Votre nom *</label>
       <input type="text" id="input-name" name="name" required="required" placeholder="Nom" class="form-control">
