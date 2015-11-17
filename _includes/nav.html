@@ -1,17 +1,19 @@
+{% assign pages = site.pages | where: "lang", page.lang | sort: 'weight' %}
 <ul class="nav nav-pills nav-stacked menu menu-big">
-  <li{% if page.id == 'home' %} class="active"{% endif %}>
-    <a href="/" class="h2">Accueil</a>
+{% for current_page in pages %}
+  <li{% if current_page.id == page.id %} class="active"{% endif %}>
+    <a href="{{ current_page.url }}" class="h2">{{ current_page.title }}</a>
   </li>
+{% endfor %}
+</ul>
 
-  <li{% if page.id == 'portfolio' %} class="active"{% endif %}>
-    <a href="/portfolio" class="h2">Portfolio</a>
+{% assign pages = site.pages | where: "id", page.id | sort: 'path' %}
+<ul class="nav nav-pills menu">
+{% for current_page in pages %}
+{% if current_page.lang.code != page.lang.code %}
+  <li>
+    <a href="{{ current_page.url }}" class="{{ current_page.lang.code }}">{{ current_page.lang.name }}</a>
   </li>
-
-  <li{% if page.id == 'resume' %} class="active"{% endif %}>
-    <a href="/resume" class="h2">CV</a>
-  </li>
-
-  <li{% if page.id == 'contact' %} class="active"{% endif %}>
-    <a href="/contact" class="h2">Contact</a>
-  </li>
+{% endif %}
+{% endfor %}
 </ul>
