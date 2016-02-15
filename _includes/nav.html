@@ -6,14 +6,3 @@
   </li>
 {% endfor %}
 </ul>
-
-{% assign pages = site.pages | where: "id", page.id | sort: 'path' %}
-<ul class="nav nav-pills menu">
-{% for current_page in pages %}
-{% if current_page.lang.code != page.lang.code %}
-  <li>
-    <a href="{{ current_page.url }}" class="{{ current_page.lang.code }}">{{ current_page.lang.name }}</a>
-  </li>
-{% endif %}
-{% endfor %}
-</ul>
