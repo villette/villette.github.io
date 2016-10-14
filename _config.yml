@@ -4,27 +4,24 @@ defaults:
     scope:
       path: en
     values:
-      lang:
-        code: en
-        name: English
+      langcode: en
+      language: English
       layout: default
 
   -
     scope:
       path: fr
     values:
-      lang:
-        code: fr
-        name: Français
+      langcode: fr
+      language: Français
       layout: default
 
   -
     scope:
       path: es
     values:
-      lang:
-        code: es
-        name: Español
+      langcode: es
+      language: Español
       layout: default
 
 exclude:
