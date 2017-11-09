@@ -1,4 +1,8 @@
 -
+  - image: mieuxplacer.com
+    www: http://www.mieuxplacer.com
+    title: Mieuxplacer.com
+
   - image: econdo
     www: http://e-condo.com
     title: E-Condo
@@ -11,11 +15,11 @@
     www: http://www.floedesign.ca
     title: Floe Design + Technologies
 
+-
   - image: rugbymontreal
     www: http://www.xvdemontreal.com
     title: XV de Montréal
 
--
   - image: medidata
     www: http://www.mdsol.com
     title: Medidata Solutions
@@ -28,11 +32,11 @@
     www: http://www.vortexconseils.ca
     title: Vortex Conseils
 
+-
   - image: dtr
     www: http://www.tetesrasees.com
     title: Défi Têtes Rasées Leucan
 
--
   - image: ds
     www: http://www.defiski.com
     title: Défi Ski Leucan
@@ -45,11 +49,11 @@
     www: http://www.clubmedta.com
     title: Club Med Spécialistes
 
+-
   - image: viarail
     www: http://www.viarail.ca
     title: VIA Rail
 
--
   - image: platania
     www: http://www.platania.ca
     title: Platania
