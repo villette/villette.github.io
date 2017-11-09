@@ -7,6 +7,7 @@ defaults:
       lang: en
       language: English
       layout: default
+      description: PHP developer, Drupal expert
 
   -
     scope:
@@ -15,6 +16,7 @@ defaults:
       lang: fr
       language: Français
       layout: default
+      description: Développeur PHP, expert Drupal
 
   -
     scope:
@@ -23,14 +25,27 @@ defaults:
       lang: es
       language: Español
       layout: default
+      description: Desarrollador PHP, experto Drupal
 
 exclude:
   - Gemfile
   - Gemfile.lock
 
+plugins:
+  - jekyll-sitemap
+  - jekyll-seo-tag
+
 # Site settings
 title: Pierre Villette
 email: villette.pierre@gmail.com
+url: http://villette.github.io
+social:
+  name: Pierre Villette
+  links:
+    - https://www.facebook.com/villette.pierre
+    - https://www.linkedin.com/in/pierrevillette
+    - https://twitter.com/rocktownie
+    - https://plus.google.com/+PierreVillette
 
 # Translations
 translations:
