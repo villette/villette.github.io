@@ -4,7 +4,7 @@ defaults:
     scope:
       path: en
     values:
-      langcode: en
+      lang: en
       language: English
       layout: default
 
@@ -12,7 +12,7 @@ defaults:
     scope:
       path: fr
     values:
-      langcode: fr
+      lang: fr
       language: Français
       layout: default
 
@@ -20,7 +20,7 @@ defaults:
     scope:
       path: es
     values:
-      langcode: es
+      lang: es
       language: Español
       layout: default
 
@@ -33,8 +33,10 @@ title: Pierre Villette
 email: villette.pierre@gmail.com
 
 # Translations
-t:
-  copyright:
-    fr: Tous droits réservés
-    en: All rights reserved
-    es: Todos los derechos reservados
+translations:
+  fr:
+    copyright: Tous droits réservés
+  en:
+    copyright: All rights reserved
+  es:
+    copyright: Todos los derechos reservados

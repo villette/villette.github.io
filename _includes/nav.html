@@ -1,4 +1,4 @@
-{% assign pages = site.pages | where: "langcode", page.langcode | sort: 'weight' %}
+{% assign pages = site.pages | where: "lang", page.lang | sort: 'weight' %}
 <ul class="nav nav-pills nav-stacked menu menu-big">
 {% for current_page in pages %}
   <li{% if current_page.id == page.id %} class="active"{% endif %}>
