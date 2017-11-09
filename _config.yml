@@ -4,37 +4,54 @@ defaults:
     scope:
       path: en
     values:
-      langcode: en
+      lang: en
       language: English
       layout: default
+      description: PHP developer, Drupal expert
 
   -
     scope:
       path: fr
     values:
-      langcode: fr
+      lang: fr
       language: Français
       layout: default
+      description: Développeur PHP, expert Drupal
 
   -
     scope:
       path: es
     values:
-      langcode: es
+      lang: es
       language: Español
       layout: default
+      description: Desarrollador PHP, experto Drupal
 
 exclude:
   - Gemfile
   - Gemfile.lock
 
+plugins:
+  - jekyll-sitemap
+  - jekyll-seo-tag
+
 # Site settings
 title: Pierre Villette
 email: villette.pierre@gmail.com
+url: http://villette.github.io
+social:
+  name: Pierre Villette
+  links:
+    - https://www.facebook.com/villette.pierre
+    - https://www.linkedin.com/in/pierrevillette
+    - https://twitter.com/rocktownie
+    - https://plus.google.com/+PierreVillette
 
 # Translations
-t:
-  copyright:
-    fr: Tous droits réservés
-    en: All rights reserved
-    es: Todos los derechos reservados
+translations:
+  fr:
+    copyright: Tous droits réservés
+  en:
+    copyright: All rights reserved
+  es:
+    copyright: Todos los derechos reservados

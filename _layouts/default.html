@@ -2,7 +2,7 @@
 <html>
 
   <head>
-    <title>{{ site.title }} | {{ page.title }}</title>
+    {% seo %}
 
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width initial-scale=1, maximum-scale=1, user-scalable=no">
@@ -18,7 +18,7 @@
     <div class="container">
       <div class="row">
         <div class="col-md-10 col-md-offset-1 header">
-          <img class="img-responsive banner" alt="Banner" src="/img/header.{{ page.langcode }}.jpg">
+          <img class="img-responsive banner" alt="Banner" src="/img/header.{{ page.lang }}.jpg">
         </div>
       </div>
 
