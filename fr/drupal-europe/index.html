@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Drupal Europe</title>
+    <link rel="stylesheet" href="https://stackedit.io/style.css" />
+  </head>
+  <body class="stackedit">
+    <div class="stackedit__html">
+      <h1 id="mon-expérience-à-la-drupal-europe-2018">Mon expérience à la Drupal Europe 2018</h1>
+      <p><a href="https://www.drupaleurope.org/" target="_blank"><img src="drupal-europe-header.png"></a></p>
+      <p>L’an dernier, pour différentes raisons, la Drupal Association a décidé de ne pas organiser de DrupalCon en Europe en 2018.</p>
+      <p>Cependant, la communauté drupaliste européenne a décidé de ne pas se laisser faire et de mettre en place une autre convention, non officielle, pour pallier à cette absence. <strong>Drupal Europe</strong> était née.</p>
+      <p>Avec plus de 160 sessions, la première convention Drupal Europe a réuni plus de 1600 personnes sur une durée de 5 jours, du 10 au 14 septembre 2018. J’y étais, et voici ce que j’en ai retenu.</p>
+      <h2 id="decoupled-drupal--la-tendance-du-moment">Decoupled Drupal : la tendance du moment</h2>
+      <p>Un certain nombre de sessions était dédié à l’utilisation “découplée” de Drupal. L’idée de cette approche étant de conserver le back-office Drupal comme méthode de contribution, puis de servir les données ainsi enregistrées via des services tels que REST, JSON API ou GraphQL (par exemple). Ces services peuvent être ensuite consommés par des applications purement front-end, comme React ou VueJs.</p>
+      <p>Le plus gros avantage de cette stratégie est la garantie d’une distribution de contenus omnicanal. Les données peuvent être consommées par différentes applications tierces tout en gardant l’application de base légère est disponible.<br>
+        Mais ce n’est pas le seul avantage, l’approche découplée permet aussi de s’affranchir de la méthode de rendu par défaut de Drupal qui est bien souvent limitée techniquement.
+      </p>
+      <p>
+        <iframe width="750" height="422" src="https://www.youtube.com/embed/Nb6Gws2gzkk" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+        <br>
+        <strong>Preston So</strong>, directeur de la recherche et de l’innovation chez <strong>Acquia</strong>, parle de Drupal “décentralisé”
+      </p>
+      <h2 id="tout-le-monde-aime-paragraphs">Tout le monde aime Paragraphs</h2>
+      <p>Les sessions sur le module Paragraphs étaient probablement les plus populaires, rien d’étonnant connaissant la puissance et la renommée de ce module.</p>
+      <h3 id="geysir">Geysir</h3>
+      <p>La première session à laquelle j’ai assisté concernant Pragraphs parlait du module <a href="https://www.drupal.org/project/geysir" target="_blank">Geysir</a>, qui apporte une nouvelle manière de contribuer les paragraphes plus simple et plus intuitive.</p>
+      <p>
+        <iframe width="750" height="422" src="https://www.youtube.com/embed/CB7pPhnk2-w" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+        <br>
+        Une démo de Geysir par <strong>Jan Lemmens</strong>, d’<strong>Amplexor</strong>.
+      </p>
+      <p>Pour le moment, le module ne supporte pas les installations multilingue ni les paragraphes imbriqués, mais il reste néanmoins très prometteur et risque de beaucoup plaire aux contributeurs.</p>
+      <h3 id="fonctionnalités-méconnues">Fonctionnalités méconnues</h3>
+      <p>Beaucoup de fonctionnalités, intégrées au module Paragraphs ou faisant partie d’autres modules contrib, ont fait l’objet de discussions pendant la conférence.</p>
+      <p>Le module <a href="https://www.drupal.org/project/paragraphs_collection" target="_blank">Paragraphs Collection</a> améliore l’expérience de contribution à travers une série de plugins, qui apportent entre autre :</p>
+      <ul>
+        <li>la possibilité d’appliquer des styles différents à plusieurs paragraphes du même type</li>
+        <li>l’introduction d’une librairie de paragraphes permettant de réutiliser les paragraphes dans plusieurs contenus</li>
+        <li>une interface de drag &amp; drop qui permet de mieux gérer ses paragraphes dans le back-office, même imbriqués !</li>
+        <li>grouper les types de paragraphes pour pouvoir les choisir plus facilement pendant la contribution</li>
+      </ul>
+      <p>
+        <a href="https://docs.google.com/presentation/d/1c-VI3AiY4nEIB_P-e4RGHdyXMWE8LoCf3MlhNLhQVHU/edit#slide=id.p" target="_blank">
+          <img src="paragraphs-presentation-slide.png">
+        </a>
+      </p>
+      <p>Le widget de champ expérimental, inclus directement dans le module Paragraphs apporte aussi son lot de fonctionnalités plus ou moins utiles.</p>
+      <h2 id="quoi-de-neuf-dans-drupal-8.6">Quoi de neuf dans Drupal 8.6</h2>
+      <h3 id="le-profil-de-démo-umami">Le profil de démo Umami</h3>
+      <p>L’initiative Out Of The Box (OOTB) s’est donnée comme mission de rendre Drupal plus abordable et plus facile à utiliser dès l’installation pour tout le monde.<br>
+        Pour répondre à ce besoin, le profil de démo <strong>Umami</strong> a été créé. Ce profil d’installation active toute une panoplie de configuration et de contenus afin de pouvoir tirer profit des fonctionnalités de base de Drupal en un minimum d’effort, très pratique pour montrer Drupal en action en un clin d’œil.
+      </p>
+      <p><iframe width="750" height="422" src="https://www.youtube.com/embed/X4MgY65Vnp4" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe></p>
+      <h3 id="media-library">Media library</h3>
+      <p>Lors de la sortie de la version 8.5, le module media était déjà intégré au cœur de Drupal. Avec la version 8.6, Drupal introduit la <strong>Media library</strong>, qui facilite grandement la mise en place d’un Data Assets Manager (DAM).</p>
+      <h3 id="content-moderation-workflow">Content moderation workflow</h3>
+      <p>Une des fonctionnalités majeures introduites dans Drupal 8.6 est le <strong>Content Moderation Workflow</strong>, qui permet de définir une ou plusieurs stratégies de contribution en implémentant différents états de publications des contenus.<br>
+        Cela permet par exemple de travailler sur une version future d’un contenu tout en gardant la version actuelle publiée, ou alors de forcer la relecture d’un contenu avant de le publier, etc.
+      </p>
+      <h2 id="autres-sessions-intéressantes">Autres sessions intéressantes</h2>
+      <h3 id="driesnote">Driesnote</h3>
+      <p>Même si cette conférence n’était pas une DrupalCon officielle, <strong>Dries Buytaert</strong> en a profité pour présenter la traditionnelle Driesnote pour faire l’état actuel et futur du logiciel ainsi que de la communauté Drupal.</p>
+      <p><iframe width="750" height="422" src="https://www.youtube.com/embed/iXB0sNreSlM" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe></p>
+      <h3 id="elasticsearch">ElasticSearch</h3>
+      <p>L’équipe technique de <strong>Wunder</strong> est venue faire une présentation sur leur utilisation d’ElasticSearch au sein de leurs projets Drupal. Ils en ont aussi profité pour présenter leur module <a href="https://www.drupal.org/project/elasticsearch_helper" target="_blank">elasticsearch_helper</a>, qui permet d’intégrer de manière très efficace le populaire moteur de recherche à Drupal.</p>
+      <h3 id="the-gutenberg-experience">The Gutenberg experience</h3>
+      <p>À l’origine, <strong>Gutenberg</strong> était un plugin pour Wordpress, puis il a été rendu disponible comme librairie JavaScript. Certains membres de la communauté ont sauté sur l’occasion pour l’adapter à Drupal afin de fournir une interface d’administration plus intuitive et pratique pour les contributeurs.<br>
+        Malheureusement je n’ai pas eu l’occasion d’assister à leur présentation, mais je met ici les slides qui ont été utilisés, ainsi que le <a href="https://drupalgutenberg.org/" target="_blank">site de demo de Gutenberg</a>.
+      </p>
+      <h3 id="intégration-de-gitlab-dans-drupal.org">Intégration de Gitlab dans Drupal.org</h3>
+      <p>Une des nouvelles les plus intéressantes de la Driesnote était la perspective d’intégrer <strong>Gitlab</strong> dans le workflow de contribution de Drupal.org.<br>
+        Les développeurs Drupal aguerris seront soulagés de pouvoir utiliser une interface moderne et éprouvée pour collaborer sur leurs modules/thèmes contrib ou le cœur de Drupal.<br>
+        De plus, l’utilisation de cet outil permettra de moins déstabiliser les nouveaux collaborateurs, et de réduire l’aspect marginal que peut avoir Drupal pour les développeurs qui lui sont étrangers.<br>
+        Pour plus d’information, voir <a href="https://www.drupal.org/drupalorg/blog/developer-tools-initiative-part-5-gitlab-partnership" target="_blank">l’article dédié à cette migration</a>.
+      </p>
+      <h2 id="le-futur-de-drupal-en-europe">Le futur de Drupal en Europe</h2>
+      <p>Considérant le succès que la conférence Drupal Europe a eu, surtout pour une première édition, la Drupal Association a décidé de rétablir l’organisation des DrupalCon en Europe à partir de l’année prochaine.<br>
+        Celle ci sera organisée à <strong>Amsterdam</strong>, du 28 octobre au 1er novembre 2019.
+      </p>
+      <p><a href="https://events.drupal.org/amsterdam2019" target="_blank"><img src="drupalcon-europe-2019.png"></a></p>
+    </div>
+  </body>
+</html>
