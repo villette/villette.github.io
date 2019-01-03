@@ -18,15 +18,6 @@ defaults:
       layout: default
       description: Développeur PHP, expert Drupal
 
-  -
-    scope:
-      path: es
-    values:
-      lang: es
-      language: Español
-      layout: default
-      description: Desarrollador PHP, experto Drupal
-
 exclude:
   - Gemfile
   - Gemfile.lock
@@ -53,5 +44,3 @@ translations:
     copyright: Tous droits réservés
   en:
     copyright: All rights reserved
-  es:
-    copyright: Todos los derechos reservados
