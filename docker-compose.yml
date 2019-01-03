@@ -1,0 +1,11 @@
+version: "3"
+services:
+  pvillette-jekyll:
+    container_name: pvillette_jekyll
+    image: jekyll/jekyll
+    entrypoint: jekyll serve --watch
+    ports:
+      - 80:4000
+    volumes:
+      - .:/srv/jekyll
+    working_dir: /srv/jekyll
