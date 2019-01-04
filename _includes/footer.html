@@ -1,15 +1,22 @@
-<div class="col-md-6 col-md-offset-1 copyright">
+<div class="col-md-6 copyright">
   &copy; {{ site.title }} {{ site.time | date: '%Y' }}
   <span class="hidden-xs">&dash; {{ site.translations[page.lang].copyright }}</span>
 </div>
 
-<div class="col-md-4">
+<div class="col-md-6">
   {% assign pages = site.pages | where: "id", page.id | sort: 'path' %}
   <ul class="nav nav-pills pull-right hidden-sm hidden-xs menu menu-small">
   {% for current_page in pages %}
     {% if current_page.lang != page.lang %}
       <li>
         <a href="{{ current_page.url }}" class="{{ current_page.lang }}">
+          <span class="lang-xs" lang="{{ current_page.lang }}"></span>
+          {{ current_page.language }}
+        </a>
+      </li>
+    {% else %}
+      <li class="active">
+        <a href="#">
           <span class="lang-xs" lang="{{ current_page.lang }}"></span>
           {{ current_page.language }}
         </a>
