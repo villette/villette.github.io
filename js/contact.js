@@ -1,7 +1,8 @@
-$(document).ready(function() {
+(function($) {
+  "use strict"; // Start of use strict
 
   // Handle form with AJAX
-  $('form.contact').submit(function(e) {
+  $('section#contact form').submit(function(e) {
     e.preventDefault();
 
     $.ajax({
@@ -10,14 +11,14 @@ $(document).ready(function() {
       data: $(this).serialize(),
       dataType: 'json',
       complete: function(xhr, status) {
-        var message = $('div#form').data(status);
+        var message = $('section#contact div#form').data(status);
         var attribute = (status == 'error') ? 'danger' : status;
 
         $('div.alert').remove();
-        $('form.contact').before('<div id="' + status + '" class="alert alert-' + attribute + '" style="display: none;"><a href="#" data-dismiss="alert" class="close">×</a>' + message + '</div>');
+        $('section#contact form').before('<div id="' + status + '" class="alert alert-' + attribute + '" style="display: none;"><a href="#" data-dismiss="alert" class="close">×</a>' + message + '</div>');
         $('div#' + status).fadeIn();
       },
     });
   });
 
-});
+})(jQuery); // End of use strict
