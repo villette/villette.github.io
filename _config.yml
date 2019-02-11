@@ -7,7 +7,8 @@ defaults:
       lang: en
       language: English
       layout: default
-      description: PHP developer, Drupal expert
+      title: Pierre Villette - Drupal Architect / Developer
+      description: Pierre Villette - Drupal Architect / Developer
 
   -
     scope:
@@ -16,9 +17,11 @@ defaults:
       lang: fr
       language: Français
       layout: default
-      description: Développeur PHP, expert Drupal
+      title: Pierre Villette - Architecte / Développeur Drupal
+      description: Pierre Villette - Drupal Architect / Developer
 
 exclude:
+  - docker-compose.yml
   - Gemfile
   - Gemfile.lock
 
@@ -27,20 +30,6 @@ plugins:
   - jekyll-seo-tag
 
 # Site settings
-title: Pierre Villette
 email: villette.pierre@gmail.com
-url: http://villette.github.io
-social:
-  name: Pierre Villette
-  links:
-    - https://www.facebook.com/villette.pierre
-    - https://www.linkedin.com/in/pierrevillette
-    - https://twitter.com/rocktownie
-    - https://plus.google.com/+PierreVillette
-
-# Translations
-translations:
-  fr:
-    copyright: Tous droits réservés
-  en:
-    copyright: All rights reserved
+url: https://villette.github.io
+author: Pierre Villette

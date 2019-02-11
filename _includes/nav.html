@@ -1,8 +1,0 @@
-{% assign pages = site.pages | where: "lang", page.lang | sort: 'weight' %}
-<ul class="nav nav-pills nav-stacked menu menu-big">
-{% for current_page in pages %}
-  <li{% if current_page.id == page.id %} class="active"{% endif %}>
-    <a href="{{ current_page.url }}" class="h2">{{ current_page.title }}</a>
-  </li>
-{% endfor %}
-</ul>

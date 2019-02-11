@@ -1,4 +1,0 @@
-html, body, .container { height: 100%; }
-.container { width: 100%; display: table; }
-.row { display: table-cell; vertical-align: middle; }
-a:hover { text-decoration: none; }

@@ -1,35 +1,203 @@
-body { background-color: #000000; font-family: Aller, Helvetica, sans-serif; font-size: 15px; color: #FFFFFF; letter-spacing: 0.8px; }
+/*!
+ * Start Bootstrap - Resume v5.0.3 (https://startbootstrap.com/template-overviews/resume)
+ * Copyright 2013-2019 Start Bootstrap
+ * Licensed under MIT (https://github.com/BlackrockDigital/startbootstrap-resume/blob/master/LICENSE)
+ */
 
-div.header { margin-bottom: 30px; }
+body {
+  font-family: 'Muli', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol', 'Noto Color Emoji';
+  padding-top: 54px;
+  color: #868e96;
+}
 
-ul.menu-big li:first-of-type a { margin-top: 0; }
-ul.menu-small li { margin-left: 15px; }
-ul.menu-small li:first-of-type { margin-left: 0; }
+@media (min-width: 992px) {
+  body {
+    padding-top: 0;
+    padding-left: 17rem;
+  }
+}
 
-ul.menu li a,
-ul.pager li a { color: #666666; }
-ul.menu li a:hover,
-ul.menu li.active a,
-ul.menu li.active a:hover { color: #FFFFFF; background-color: #333333; }
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: 'Saira Extra Condensed', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol', 'Noto Color Emoji';
+  font-weight: 700;
+  text-transform: uppercase;
+  color: #343a40;
+}
 
-div.portfolio div.show-more button { border-color: #333333; background-color: #333333; color: #FFFFFF; }
+h1 {
+  font-size: 6rem;
+  line-height: 5.5rem;
+}
 
-div.project { border: 3px solid #EEEEEE; margin-bottom: 30px; }
-  div.project a { display: block; position: relative; }
-    div.project a img { position: relative; }
-    div.project a span { display: none; font-weight: bold; font-size: 20px; height: 100%; padding-top: 25%; position: absolute; width: 100%; z-index: 100; background-color: rgba(15, 15, 15, 0.6); color: #FFFFFF; text-shadow: #000000 0px 0px 20px; }
-      div.project a span em { display: block; font-weight: normal; font-size: 13px; color: #CCCCCC; }
+h2 {
+  font-size: 3.5rem;
+}
 
-div.resume { color: #CCCCCC; }
-  div.resume div.section { margin-bottom: 40px; }
+h3 {
+  font-size: 2rem;
+}
 
-  div.resume h3 { color: #666666; }
-  div.resume h4 { font-size: 16px; }
-  div.resume ul { margin-bottom: 25px; }
-    div.resume ul li { margin-bottom: 5px; }
+p.lead {
+  font-size: 1.15rem;
+  font-weight: 400;
+}
 
-form.contact a.social { text-decoration: none; }
-  form.contact a.social img { margin-right: 5px; max-height: 30px; }
+.subheading {
+  text-transform: uppercase;
+  font-weight: 500;
+  font-family: 'Saira Extra Condensed', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol', 'Noto Color Emoji';
+  font-size: 1.5rem;
+}
 
-div.footer { margin-top: 30px; margin-bottom: 30px; }
-  div.footer div.copyright { padding-top: 10px; padding-bottom: 10px; }
+.social-icons a {
+  display: inline-block;
+  height: 3.5rem;
+  width: 3.5rem;
+  background-color: #495057;
+  color: #fff !important;
+  border-radius: 100%;
+  text-align: center;
+  font-size: 1.5rem;
+  line-height: 3.5rem;
+  margin-right: 1rem;
+}
+
+.social-icons a:last-child {
+  margin-right: 0;
+}
+
+.social-icons a:hover {
+  background-color: #BD5D38;
+}
+
+.dev-icons {
+  font-size: 3rem;
+}
+
+.dev-icons .list-inline-item i:hover {
+  color: #BD5D38;
+}
+
+.side-nav .navbar-nav .nav-item .nav-link {
+  font-weight: 800;
+  letter-spacing: 0.05rem;
+  text-transform: uppercase;
+}
+
+.side-nav .navbar-toggler:focus {
+  outline-color: #d48a6e;
+}
+
+@media (min-width: 992px) {
+  .side-nav {
+    text-align: center;
+    position: fixed;
+    top: 0;
+    left: 0;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    width: 17rem;
+    height: 100vh;
+  }
+  .side-nav .navbar-brand {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    margin: auto auto 0;
+    padding: 0.5rem;
+  }
+  .side-nav .navbar-brand .img-profile {
+    max-width: 10rem;
+    max-height: 10rem;
+    border: 0.5rem solid rgba(255, 255, 255, 0.2);
+  }
+  .side-nav .navbar-collapse {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: start;
+    -ms-flex-align: start;
+    align-items: flex-start;
+    -webkit-box-flex: 0;
+    -ms-flex-positive: 0;
+    flex-grow: 0;
+    width: 100%;
+    margin-bottom: auto;
+  }
+  .side-nav .navbar-collapse .navbar-nav {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    width: 100%;
+  }
+  .side-nav .navbar-collapse .navbar-nav .nav-item {
+    display: block;
+  }
+  .side-nav .navbar-collapse .navbar-nav .nav-item .nav-link {
+    display: block;
+  }
+}
+
+section.resume-section {
+  padding-top: 5rem !important;
+  padding-bottom: 5rem !important;
+  max-width: 75rem;
+}
+
+section.resume-section .resume-item .resume-date {
+  min-width: none;
+}
+
+@media (min-width: 768px) {
+  section.resume-section {
+    min-height: 100vh;
+  }
+  section.resume-section .resume-item .resume-date {
+    min-width: 18rem;
+  }
+}
+
+@media (min-width: 992px) {
+  section.resume-section {
+    padding-top: 3rem !important;
+    padding-bottom: 3rem !important;
+  }
+}
+
+.bg-primary {
+  background-color: #BD5D38 !important;
+}
+
+.text-primary {
+  color: #BD5D38 !important;
+}
+
+.btn-primary {
+  color: #fff;
+  background-color: #BD5D38;
+  border-color: #BD5D38;
+}
+
+.btn-primary:hover, .btn-primary:focus, .btn-primary:active {
+  background-color: #824027;
+  border-color: #824027;
+}
+
+a {
+  color: #BD5D38;
+}
+
+a:hover, a:focus, a:active {
+  color: #824027;
+}
