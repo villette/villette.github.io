@@ -5,7 +5,18 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
-    {% seo %}
+    <title>Pierre Villette - {{ site.data.translations[page.lang].layout.title }}</title>
+
+    <meta name="description" content="{{ site.data.translations[page.lang].layout.description }}" />
+    <meta name="author" content="Pierre Villette" />
+
+    <!-- OpenGraph -->
+    <meta property="og:title" content="Pierre Villette - {{ site.data.translations[page.lang].layout.title }}" />
+    <meta property="og:type" content="website" />
+    <meta property="og:locale" content="{{ page.lang }}" />
+    <meta property="og:description" content="{{ site.data.translations[page.lang].layout.description }}" />
+    <meta property="og:url" content="http://villette.github.io/{{ page.lang }}/" />
+    <meta property="og:image" content="http://villette.github.io/img/profile.jpg" />
 
     <!-- Bootstrap core CSS -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css">

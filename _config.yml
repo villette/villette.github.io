@@ -5,20 +5,14 @@ defaults:
       path: en
     values:
       lang: en
-      language: English
       layout: default
-      title: Pierre Villette - Drupal Architect / Developer
-      description: Pierre Villette - Drupal Architect / Developer
 
   -
     scope:
       path: fr
     values:
       lang: fr
-      language: Français
       layout: default
-      title: Pierre Villette - Architecte / Développeur Drupal
-      description: Pierre Villette - Drupal Architect / Developer
 
 exclude:
   - docker-compose.yml
@@ -28,8 +22,3 @@ exclude:
 plugins:
   - jekyll-sitemap
   - jekyll-seo-tag
-
-# Site settings
-email: villette.pierre@gmail.com
-url: https://villette.github.io
-author: Pierre Villette
