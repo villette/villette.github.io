@@ -22,6 +22,16 @@ experience:
   work:
     - title: Expert Drupal
       company:
+        name: Druid Oy
+        website: https://www.druid.fi/en
+      location: Helsinki (FINLANDE)
+      tasks:
+        - Architecture et lead technique de projets Drupal 8
+        - Développement de sites découplés (headless) et exposition des données avec JSON:API
+        - Maintenance et devops avec les solutions d'Amazee.io
+      dates: juin 2019 – maintenant
+    - title: Expert Drupal
+      company:
         name: Clever-Age
         website: https://www.clever-age.com/fr/
       location: Bordeaux (FRANCE)
@@ -29,7 +39,7 @@ experience:
         - Architecture et lead technique de projets Drupal 8
         - Intégration de solutions externes dans le workflow de contenus Drupal (PIM, ElasticSearch, API custom, etc.)
         - Développement de modules custom avancés pour des besoins clients spécifiques
-      dates: avril 2017 – maintenant
+      dates: avril 2017 – mai 2019
     - title: Développeur Drupal
       company:
         name: Easytech
