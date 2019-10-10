@@ -11,6 +11,7 @@ navigation:
   contact: Contact
 
 about:
+  informations: "Sammonkatu 6C #76 · 00100 Helsinki, FINLAND · +358 40 136 7734 ·"
   contact: Contact me
   introduction: I am a Drupal architect and back-end developer with nearly 10 years of experience. My expertise resides in leveraging Drupal features to build robust and durable websites.
   resume:
