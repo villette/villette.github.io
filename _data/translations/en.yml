@@ -22,6 +22,16 @@ experience:
   work:
     - title: Drupal expert
       company:
+        name: Druid Oy
+        website: https://www.druid.fi/en
+      location: Helsinki (FINLAND)
+      tasks:
+        - Architecture and tech lead of Drupal 8 projects
+        - Development of decoupled websites (headless) with data available through JSON:API
+        - Maintenance and devops unsing Amazee.io solutions
+      dates: June 2019 – now
+    - title: Drupal expert
+      company:
         name: Clever-Age
         website: https://www.clever-age.com/en/
       location: Bordeaux (FRANCE)
@@ -29,7 +39,7 @@ experience:
         - Architecture and tech lead of Drupal 8 projects
         - Integration of external solutions in the Drupal content workflow (PIM, ElasticSearch, custom APIs, etc.)
         - Development of advanced custom modules for the specific needs of clients
-      dates: April 2017 – present
+      dates: April 2017 – May 2019
     - title: Drupal developer
       company:
         name: Easytech
@@ -97,7 +107,7 @@ interests:
   lines:
     - On a more personal note, I would say that I'm a big fan of all kind of sports, and especially rugby, which I've been practicing since my teenage years.
     - When I'm not exercising, I enjoy the occasional video game, or watching movies and TV shows of a wide range of genres, from fantasy to comedy, or even sci-fi.
-    - I also love to travel, discover the world, new foods and cultures, meeting new people and experiencing new experiences.
+    - I also love to travel, discover the world, new foods and cultures, meeting new people and making new experiences.
 
 contact:
   title: Contact
