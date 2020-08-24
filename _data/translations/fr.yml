@@ -11,7 +11,7 @@ navigation:
   contact: Contact
 
 about:
-  informations: "Sammonkatu 6C #76 · 00100 Helsinki, FINLANDE · +358 40 136 7734 ·"
+  informations: "116 Cromwell Road, Flat 505 · SW74XE Londres, ROYAUME UNI · +33 6 19 04 84 26 ·"
   contact: Contactez-moi
   introduction: L'expérience que j'ai accumulée en presque 10 ans de présence sur le web m'a permis de devenir spécialiste de Drupal. Mon expertise me permet d'utiliser les fonctionnalités de Drupal afin de développer des sites fiables et perennes.
   resume:
@@ -21,6 +21,16 @@ about:
 experience:
   title: Expérience professionnelle
   work:
+    - title: Développeur Drupal senior
+      company:
+        name: Catch Digital
+        website: https://www.catchdigital.com/
+      location: Londres (ROYAUME UNI)
+      tasks:
+        - Utilisation de Drupal 8 et Drupal 9 pour la création de sites web professionnels
+        - Intégration avec de nombreux services et API externes
+        - Hébergement sur Acquia cloud services, usage de Bitbucket pipelines pour le devops
+      dates: janvier 2020 – maintenant
     - title: Expert Drupal
       company:
         name: Druid Oy
@@ -30,7 +40,7 @@ experience:
         - Architecture et lead technique de projets Drupal 8
         - Développement de sites découplés (headless) et exposition des données avec JSON:API
         - Maintenance et devops avec les solutions d'Amazee.io
-      dates: juin 2019 – maintenant
+      dates: juin 2019 – décembre 2019
     - title: Expert Drupal
       company:
         name: Clever-Age
@@ -41,16 +51,6 @@ experience:
         - Intégration de solutions externes dans le workflow de contenus Drupal (PIM, ElasticSearch, API custom, etc.)
         - Développement de modules custom avancés pour des besoins clients spécifiques
       dates: avril 2017 – mai 2019
-    - title: Développeur Drupal
-      company:
-        name: Easytech
-        website: https://easytechgreen.com/
-      location: Buenos Aires (ARGENTINA)
-      tasks:
-        - Utilisation de Drupal 7 pour développer une plateforme de gestion d’appartements avec plusieurs rôles et types de souscriptions
-        - Intégration avec plusieurs solutions d’e-commerce (PayPal, Mercadopago, etc.)
-        - Recherche & développement orienté vers Drupal 8
-      dates: mai 2016 – décembre 2016
     - title: Développeur Drupal
       company:
         name: Floe Design + Technologies
@@ -78,7 +78,7 @@ skills:
   groups:
     - title: Développement
       items:
-        - label: "Langages web : HTML / xHTML, CSS, JavaScript, PHP7"
+        - label: "Langages web : HTML / xHTML, PHP7, JavaScript, CSS"
           icon: fas fa-code
         - label: "CMS / Frameworks PHP : Drupal 8/7, Symfony 4/3"
           icon: fab fa-php
@@ -88,6 +88,10 @@ skills:
           icon: fas fa-terminal
         - label: "Outils DevOps : Docker, Vagrant, LXC, Ansible, Jenkins, Capistrano"
           icon: fab fa-docker
+        - label: "Hébergement: Amazee.io, Acquia Cloud, Pantheon.io, DigitalOcean"
+          icon: fas fa-cog
+        - label: "Moteurs de recherche: ElasticSearch, Solr"
+          icon: fas fa-search
     - title: Bases de données
       items:
         - label: "MySQL/MariaDB : connaissance étendue du logiciel, utilisation de nombreux outils et de la ligne de commande"
