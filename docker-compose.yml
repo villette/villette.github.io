@@ -1,7 +1,6 @@
 version: "3"
 services:
-  pvillette-jekyll:
-    container_name: pvillette_jekyll
+  jekyll:
     image: jekyll/jekyll
     entrypoint: jekyll serve --watch
     ports:

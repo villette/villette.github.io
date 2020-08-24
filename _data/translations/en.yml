@@ -11,7 +11,7 @@ navigation:
   contact: Contact
 
 about:
-  informations: "Sammonkatu 6C #76 · 00100 Helsinki, FINLAND · +358 40 136 7734 ·"
+  informations: "116 Cromwell Road, Flat 505 · SW74XE London, UNITED KINGDOM · +33 6 19 04 84 26 ·"
   contact: Contact me
   introduction: I am a Drupal architect and back-end developer with nearly 10 years of experience. My expertise resides in leveraging Drupal features to build robust and durable websites.
   resume:
@@ -21,6 +21,16 @@ about:
 experience:
   title: Experience
   work:
+    - title: Senior drupal developer
+      company:
+        name: Catch Digital
+        website: https://www.catchdigital.com/
+      location: London (UNITED KINGDOM)
+      tasks:
+        - Use of Drupal 8 and Drupal 9 to create professional grade websites
+        - Integration with 3rd party APIs and services
+        - Hosting on Acquia cloud services, devops using Bitbucket pipelines
+      dates: January 2020 – now
     - title: Drupal expert
       company:
         name: Druid Oy
@@ -30,7 +40,7 @@ experience:
         - Architecture and tech lead of Drupal 8 projects
         - Development of decoupled websites (headless) with data available through JSON:API
         - Maintenance and devops unsing Amazee.io solutions
-      dates: June 2019 – now
+      dates: June 2019 – December 2019
     - title: Drupal expert
       company:
         name: Clever-Age
@@ -41,16 +51,6 @@ experience:
         - Integration of external solutions in the Drupal content workflow (PIM, ElasticSearch, custom APIs, etc.)
         - Development of advanced custom modules for the specific needs of clients
       dates: April 2017 – May 2019
-    - title: Drupal developer
-      company:
-        name: Easytech
-        website: https://easytechgreen.com/
-      location: Buenos Aires (ARGENTINA)
-      tasks:
-        - Use of Drupal 7 to develop a condominium managing platform with multiple roles and subscription plans
-        - Integration with several e-commerce solutions (PayPal, Mercadopago, etc.)
-        - Research & development oriented towards Drupal 8
-      dates: May 2016 – December 2016
     - title: Drupal developer
       company:
         name: Floe Design + Technologies
@@ -78,7 +78,7 @@ skills:
   groups:
     - title: Development
       items:
-        - label: "Web programming languages: HTML / xHTML, CSS, JavaScript, PHP7"
+        - label: "Web programming languages: HTML / xHTML, PHP7, JavaScript, CSS"
           icon: fas fa-code
         - label: "CMS / Frameworks PHP: Drupal 8/7, Symfony 4/3"
           icon: fab fa-php
@@ -88,6 +88,10 @@ skills:
           icon: fas fa-terminal
         - label: "DevOps tools: Docker, Vagrant, LXC, Ansible, Jenkins, Capistrano"
           icon: fab fa-docker
+        - label: "Hosting providers: Amazee.io, Acquia Cloud, Pantheon.io, DigitalOcean"
+          icon: fas fa-cog
+        - label: "Search engines: ElasticSearch, Solr"
+          icon: fas fa-search
     - title: Databases
       items:
         - label: "MySQL/MariaDB: extended knowledge of the software, use of many tools including command line interface"
