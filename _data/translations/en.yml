@@ -1,0 +1,135 @@
+layout:
+  title: Drupal Architect / Developer
+  description: I am a Drupal architect and back-end developer, my expertise resides in leveraging Drupal features to build robust and durable websites.
+
+navigation:
+  about: About
+  experience: Experience
+  education: Education
+  skills: Skills
+  interests: Interests
+  contact: Contact
+
+about:
+  informations: "Rockley Court, Rockley Road, Flat 33 · W140DB London, UNITED KINGDOM · +44 7846 671981 ·"
+  contact: Contact me
+  introduction: I am a Drupal architect and back-end developer with nearly 10 years of experience. My expertise resides in leveraging Drupal features to build robust and durable websites.
+  resume:
+    url: /docs/CV%20Pierre%20Villette%20EN.pdf
+    label: Download resume as PDF
+
+experience:
+  title: Experience
+  work:
+    - title: Senior drupal developer
+      company:
+        name: Catch Digital
+        website: https://www.catchdigital.com/
+      location: London (UNITED KINGDOM)
+      tasks:
+        - Use of Drupal 8 and Drupal 9 to create professional grade websites
+        - Integration with 3rd party APIs and services
+        - Hosting on Acquia cloud services, devops using Bitbucket pipelines
+      dates: January 2020 – now
+    - title: Drupal expert
+      company:
+        name: Druid Oy
+        website: https://www.druid.fi/en
+      location: Helsinki (FINLAND)
+      tasks:
+        - Architecture and tech lead of Drupal 8 projects
+        - Development of decoupled websites (headless) with data available through JSON:API
+        - Maintenance and devops unsing Amazee.io solutions
+      dates: June 2019 – December 2019
+    - title: Drupal expert
+      company:
+        name: Clever-Age
+        website: https://www.clever-age.com/en/
+      location: Bordeaux (FRANCE)
+      tasks:
+        - Architecture and tech lead of Drupal 8 projects
+        - Integration of external solutions in the Drupal content workflow (PIM, ElasticSearch, custom APIs, etc.)
+        - Development of advanced custom modules for the specific needs of clients
+      dates: April 2017 – May 2019
+    - title: Drupal developer
+      company:
+        name: Floe Design + Technologies
+        website: https://www.floe.ca/en/
+      location: Montreal (CANADA)
+      tasks:
+        - Websites development and maintenance
+        - Use of frameworks and CMS like Drupal 7 and Symfony 2
+      dates: March 2011 – December 2015
+
+education:
+  title: Education
+  diplomas:
+    - label: International Master of Computer Science
+      school: Supinfo Montreal (CANADA)
+      description: Qualified technician in computer science training
+      date: October 2010
+    - label: Licence Professionnelle Informatique Répartie et Mobile
+      school: IUT de La Rochelle (FRANCE)
+      description: Network and development oriented computing training
+      date: June 2008
+
+skills:
+  title: Skills
+  groups:
+    - title: Certifications
+      items:
+        - label: Acquia Certified Developer - Drupal 9
+          icon: fas fa-certificate
+    - title: Development
+      items:
+        - label: "Web programming languages: HTML / xHTML, PHP7, JavaScript, CSS"
+          icon: fas fa-code
+        - label: "CMS / Frameworks PHP: Drupal 8/7, Symfony 4/3"
+          icon: fab fa-php
+        - label: "JavaScript: jQuery, NodeJS"
+          icon: fab fa-js-square
+        - label: "Scripts languages: Perl, Python, scripts UNIX (SH, BASH, KSH)"
+          icon: fas fa-terminal
+        - label: "DevOps tools: Docker, Vagrant, LXC, Ansible, Jenkins, Capistrano"
+          icon: fab fa-docker
+        - label: "Hosting providers: Amazee.io, Acquia Cloud, Pantheon.io, DigitalOcean"
+          icon: fas fa-cog
+        - label: "Search engines: ElasticSearch, Solr"
+          icon: fas fa-search
+    - title: Databases
+      items:
+        - label: "MySQL/MariaDB: extended knowledge of the software, use of many tools including command line interface"
+          icon: fas fa-database
+        - label: PostgreSQL, SQLite, etc.
+          icon: fas fa-database
+    - title: Spoken languages
+      items:
+        - label: "French: native language"
+          icon: far fa-flag
+        - label: "English: fluent"
+          icon: far fa-flag
+        - label: "Spanish: advanced"
+          icon: far fa-flag
+
+interests:
+  title: Interests
+  lines:
+    - On a more personal note, I would say that I'm a big fan of all kind of sports, and especially rugby, which I've been practicing since my teenage years.
+    - When I'm not exercising, I enjoy the occasional video game, or watching movies and TV shows of a wide range of genres, from fantasy to comedy, or even sci-fi.
+    - I also love to travel, discover the world, new foods and cultures, meeting new people and making new experiences.
+
+contact:
+  title: Contact
+  success: Your message has been sent successfully.
+  error: An error occurred, please try again later.
+  labels:
+    name: Your name
+    email: Your email address
+    subject: Subject
+    message: Message
+    submit: Submit
+  placeholders:
+    name: Name
+    email: Email
+    subject: Subject
+    message: Message

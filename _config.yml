@@ -1,0 +1,24 @@
+# Global configuration
+defaults:
+  -
+    scope:
+      path: en
+    values:
+      lang: en
+      layout: default
+
+  -
+    scope:
+      path: fr
+    values:
+      lang: fr
+      layout: default
+
+exclude:
+  - docker-compose.yml
+  - Gemfile
+  - Gemfile.lock
+
+plugins:
+  - jekyll-sitemap
+  - jekyll-seo-tag

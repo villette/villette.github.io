@@ -1,0 +1,19 @@
+services:
+  jekyll:
+    image: ruby:2.7.3
+    entrypoint: bash -c "bundle install && bundle exec jekyll build --watch"
+    volumes:
+      - .:/srv/jekyll
+    working_dir: /srv/jekyll
+
+  browsersync:
+    image: node
+    entrypoint: bash -c "npm -g install browser-sync && browser-sync start --server '_site' --files '_site' --watch --no-open"
+    ports:
+      - 3000:3000
+      - 3001:3001
+    depends_on:
+      - jekyll
+    volumes:
+      - .:/srv/jekyll
+    working_dir: /srv/jekyll

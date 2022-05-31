@@ -1,0 +1,19 @@
+<section class="resume-section p-3 p-lg-5 d-flex align-items-center" id="education">
+  <div class="w-100">
+    <h2 class="mb-0">{{ site.data.translations[page.lang].education.title }}</h2>
+
+    {% for diploma in site.data.translations[page.lang].education.diplomas %}
+      <div class="resume-item d-flex flex-column flex-md-row justify-content-between mt-5">
+        <div class="resume-content">
+          <h3 class="mb-0">{{ diploma.label }}</h3>
+          <div class="subheading mb-3">{{ diploma.school }}</div>
+          <div>{{ diploma.description }}</div>
+        </div>
+
+        <div class="resume-date text-md-right">
+          <span class="text-primary">{{ diploma.date }}</span>
+        </div>
+      </div>
+    {% endfor %}
+  </div>
+</section>
