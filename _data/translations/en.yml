@@ -11,7 +11,7 @@ navigation:
   contact: Contact
 
 about:
-  informations: "Rockley Court, Rockley Road, Flat 33 · W140DB London, UNITED KINGDOM · +44 7846 671981 ·"
+  informations: "11 Batoum Gardens, First Floor · W67QB London, UNITED KINGDOM · +44 7846 671981 ·"
   contact: Contact me
   introduction: I am a Drupal architect and back-end developer with nearly 10 years of experience. My expertise resides in leveraging Drupal features to build robust and durable websites.
   resume:
@@ -21,7 +21,7 @@ about:
 experience:
   title: Experience
   work:
-    - title: Senior drupal developer
+    - title: Senior Drupal Developer
       company:
         name: Catch Digital
         website: https://www.catchdigital.com/
@@ -30,8 +30,9 @@ experience:
         - Use of Drupal 8 and Drupal 9 to create professional grade websites
         - Integration with 3rd party APIs and services
         - Hosting on Acquia cloud services, devops using Bitbucket pipelines
+        - Extensive use of AWS services (EC2, EB and Cognito among others)
       dates: January 2020 – now
-    - title: Drupal expert
+    - title: Drupal Architech
       company:
         name: Druid Oy
         website: https://www.druid.fi/en
@@ -39,9 +40,9 @@ experience:
       tasks:
         - Architecture and tech lead of Drupal 8 projects
         - Development of decoupled websites (headless) with data available through JSON:API
-        - Maintenance and devops unsing Amazee.io solutions
+        - Maintenance and devops using Amazee.io solutions
       dates: June 2019 – December 2019
-    - title: Drupal expert
+    - title: Drupal Expert
       company:
         name: Clever-Age
         website: https://www.clever-age.com/en/
@@ -51,7 +52,7 @@ experience:
         - Integration of external solutions in the Drupal content workflow (PIM, ElasticSearch, custom APIs, etc.)
         - Development of advanced custom modules for the specific needs of clients
       dates: April 2017 – May 2019
-    - title: Drupal developer
+    - title: Drupal Developer
       company:
         name: Floe Design + Technologies
         website: https://www.floe.ca/en/
@@ -80,28 +81,34 @@ skills:
       items:
         - label: Acquia Certified Developer - Drupal 9
           icon: fas fa-certificate
+        - label: Acquia Certified Back End Specialist - Drupal 9
+          icon: fas fa-certificate
+        - label: Acquia Certified Front End Specialist - Drupal 9
+          icon: fas fa-certificate
     - title: Development
       items:
-        - label: "Web programming languages: HTML / xHTML, PHP7, JavaScript, CSS"
+        - label: "Web programming languages: HTML / xHTML, PHP 8, JavaScript, CSS"
           icon: fas fa-code
-        - label: "CMS / Frameworks PHP: Drupal 8/7, Symfony 4/3"
+        - label: "CMS / Frameworks PHP: Drupal 9/8, Symfony 5/4"
           icon: fab fa-php
         - label: "JavaScript: jQuery, NodeJS"
           icon: fab fa-js-square
-        - label: "Scripts languages: Perl, Python, scripts UNIX (SH, BASH, KSH)"
+        - label: "Script languages: Perl, Python, scripts UNIX (SH, BASH, KSH)"
           icon: fas fa-terminal
-        - label: "DevOps tools: Docker, Vagrant, LXC, Ansible, Jenkins, Capistrano"
-          icon: fab fa-docker
-        - label: "Hosting providers: Amazee.io, Acquia Cloud, Pantheon.io, DigitalOcean"
-          icon: fas fa-cog
-        - label: "Search engines: ElasticSearch, Solr"
-          icon: fas fa-search
     - title: Databases
       items:
         - label: "MySQL/MariaDB: extended knowledge of the software, use of many tools including command line interface"
           icon: fas fa-database
         - label: PostgreSQL, SQLite, etc.
           icon: fas fa-database
+    - title: Other tools
+      items:
+        - label: "DevOps tools: Docker, Vagrant, LXC, Ansible, Jenkins, Capistrano"
+          icon: fab fa-docker
+        - label: "Hosting: AWS, Amazee.io, Acquia Cloud, Pantheon.io, DigitalOcean"
+          icon: fas fa-cog
+        - label: "Search engines: ElasticSearch, Solr"
+          icon: fas fa-search
     - title: Spoken languages
       items:
         - label: "French: native language"

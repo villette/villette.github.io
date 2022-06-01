@@ -11,7 +11,7 @@ navigation:
   contact: Contact
 
 about:
-  informations: "Rockley Court, Rockley Road, Flat 33 · W140DB Londres, ROYAUME UNI · +44 7846 671981 ·"
+  informations: "11 Batoum Gardens, First Floor · W67QB Londres, ROYAUME UNI · +44 7846 671981 ·"
   contact: Contactez-moi
   introduction: L'expérience que j'ai accumulée en presque 10 ans de présence sur le web m'a permis de devenir spécialiste de Drupal. Mon expertise me permet d'utiliser les fonctionnalités de Drupal afin de développer des sites fiables et perennes.
   resume:
@@ -30,6 +30,7 @@ experience:
         - Utilisation de Drupal 8 et Drupal 9 pour la création de sites web professionnels
         - Intégration avec de nombreux services et API externes
         - Hébergement sur Acquia cloud services, usage de Bitbucket pipelines pour le devops
+        - Utilisation avancée des services AWS (EC2, EB and Cognito entre autres)
       dates: janvier 2020 – maintenant
     - title: Expert Drupal
       company:
@@ -49,7 +50,7 @@ experience:
       tasks:
         - Architecture et lead technique de projets Drupal 8
         - Intégration de solutions externes dans le workflow de contenus Drupal (PIM, ElasticSearch, API custom, etc.)
-        - Développement de modules custom avancés pour des besoins clients spécifiques
+        - Développement de modules custom avancés pour des besoins clients
       dates: avril 2017 – mai 2019
     - title: Développeur Drupal
       company:
@@ -80,28 +81,34 @@ skills:
       items:
         - label: Acquia Certified Developer - Drupal 9
           icon: fas fa-certificate
+        - label: Acquia Certified Back End Specialist - Drupal 9
+          icon: fas fa-certificate
+        - label: Acquia Certified Front End Specialist - Drupal 9
+          icon: fas fa-certificate
     - title: Développement
       items:
-        - label: "Langages web : HTML / xHTML, PHP7, JavaScript, CSS"
+        - label: "Langages web : HTML / xHTML, PHP 8, JavaScript, CSS"
           icon: fas fa-code
-        - label: "CMS / Frameworks PHP : Drupal 8/7, Symfony 4/3"
+        - label: "CMS / Frameworks PHP : Drupal 9/8, Symfony 5/4"
           icon: fab fa-php
         - label: "JavaScript : jQuery, NodeJS"
           icon: fab fa-js-square
         - label: "Langages de scripts : Perl, Python, scripts UNIX (SH, BASH, KSH)"
           icon: fas fa-terminal
-        - label: "Outils DevOps : Docker, Vagrant, LXC, Ansible, Jenkins, Capistrano"
-          icon: fab fa-docker
-        - label: "Hébergement: Amazee.io, Acquia Cloud, Pantheon.io, DigitalOcean"
-          icon: fas fa-cog
-        - label: "Moteurs de recherche: ElasticSearch, Solr"
-          icon: fas fa-search
     - title: Bases de données
       items:
         - label: "MySQL/MariaDB : connaissance étendue du logiciel, utilisation de nombreux outils et de la ligne de commande"
           icon: fas fa-database
         - label: PostgreSQL, SQLite, etc.
           icon: fas fa-database
+    - title: Autres outils
+      items:
+        - label: "Outils DevOps : Docker, Vagrant, LXC, Ansible, Jenkins, Capistrano"
+          icon: fab fa-docker
+        - label: "Hébergement: AWS, Amazee.io, Acquia Cloud, Pantheon.io, DigitalOcean"
+          icon: fas fa-cog
+        - label: "Moteurs de recherche: ElasticSearch, Solr"
+          icon: fas fa-search
     - title: Langues parlées
       items:
         - label: "Français : langue maternelle"
