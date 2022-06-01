@@ -1,55 +1,62 @@
-(function($) {
-  "use strict"; // Start of use strict
+window.addEventListener('DOMContentLoaded', event => {
 
   // Initialize Google ReCAPTCHA
   grecaptcha.ready(function () {
-    grecaptcha.execute("6LdUEJ4cAAAAAKwpdjNvc1QEw8xYzwYpEqBE4uys", { action: "contact" }).then(function (token) {
+    grecaptcha.execute('6LdUEJ4cAAAAAKwpdjNvc1QEw8xYzwYpEqBE4uys', { action: 'contact' }).then(function (token) {
       document.getElementById('captcha-response').value = token;
     });
   });
 
   // Handle contact form with AJAX
-  $('section#contact form').submit(function (e) {
-    e.preventDefault();
+  const contactForm = document.getElementById('contact-form');
+  const toastElement = contactForm.querySelector('.toast');
+  const toastBody = toastElement.querySelector('.toast-body');
 
-    $.ajax({
-      url: $(this).attr('action'),
-      method: 'POST',
-      data: $(this).serialize(),
-      dataType: 'json',
-      complete: function (xhr, status) {
-        var message = $('section#contact div#form').data(status);
-        var attribute = (status == 'error') ? 'danger' : status;
+  formcarry({
+    form: 'WMrdOCSAvlF',
+    element: '#contact-form',
+    onSuccess: function (response) {
+      toastElement.classList.remove('bg-success', 'bg-danger');
+      toastElement.classList.add('bg-success');
+      toastBody.innerHTML = toastBody.getAttribute('data-success');
 
-        $('div.alert').remove();
-        $('section#contact form').before('<div id="' + status + '" class="alert alert-' + attribute + '" style="display: none;"><a href="#" data-dismiss="alert" class="close">×</a>' + message + '</div>');
-        $('div#' + status).fadeIn();
-      },
-    });
-  });
+      const toast = new bootstrap.Toast(toastElement);
+      toast.show();
 
-  // Smooth scrolling using jQuery easing
-  $('a.js-scroll-trigger[href*="#"]:not([href="#"])').click(function() {
-    if (location.pathname.replace(/^\//, '') == this.pathname.replace(/^\//, '') && location.hostname == this.hostname) {
-      var target = $(this.hash);
-      target = target.length ? target : $('[name=' + this.hash.slice(1) + ']');
-      if (target.length) {
-        $('html, body').animate({
-          scrollTop: (target.offset().top)
-        }, 1000, "easeInOutExpo");
-        return false;
-      }
+      contactForm.querySelector('#contact-form-submit').setAttribute('disabled', 'disabled');
+    },
+    onError: function (error) {
+      toastElement.classList.remove('bg-success', 'bg-danger');
+      toastElement.classList.add('bg-danger');
+      toastBody.innerHTML = toastBody.getAttribute('data-error');
+
+      const toast = new bootstrap.Toast(toastElement);
+      toast.show();
+
+      contactForm.querySelector('#contact-form-submit').setAttribute('disabled', 'disabled');
     }
   });
 
-  // Closes responsive menu when a scroll trigger link is clicked
-  $('.js-scroll-trigger').click(function() {
-    $('.navbar-collapse').collapse('hide');
+  // Activate Bootstrap scrollspy on the main nav element
+  const sideNav = document.body.querySelector('#sideNav');
+  if (sideNav) {
+    new bootstrap.ScrollSpy(document.body, {
+      target: '#sideNav',
+      offset: 74,
+    });
+  };
+
+  // Collapse responsive navbar when toggler is visible
+  const navbarToggler = document.body.querySelector('.navbar-toggler');
+  const responsiveNavItems = [].slice.call(
+    document.querySelectorAll('#navbarResponsive .nav-link')
+  );
+  responsiveNavItems.map(function (responsiveNavItem) {
+    responsiveNavItem.addEventListener('click', () => {
+      if (window.getComputedStyle(navbarToggler).display !== 'none') {
+        navbarToggler.click();
+      }
+    });
   });
 
-  // Activate scrollspy to add active class to navbar items on scroll
-  $('body').scrollspy({
-    target: 'li.scrollspy'
-  });
-
-})(jQuery); // End of use strict
+});

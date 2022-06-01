@@ -1,13 +1,16 @@
-<section class="resume-section p-3 p-lg-5 d-flex align-items-center" id="skills">
-  <div class="w-100">
+<section id="skills" class="resume-section">
+  <div class="resume-section-content">
     <h2 class="mb-5">{{ site.data.translations[page.lang].skills.title }}</h2>
 
     {% for group in site.data.translations[page.lang].skills.groups %}
       <div class="subheading mb-3">{{ group.title }}</div>
-      <ul class="fa-ul">
+      <ul class="fa-ul{% if forloop.last %} mb-0{% endif %}">
         {% for item in group.items %}
           <li>
-            <i class="fa-li {{ item.icon }}"></i> {{ item.label }}
+            <span class="fa-li">
+              <i class="{{ item.icon }}"></i>
+            </span>
+            {{ item.label }}
           </li>
         {% endfor %}
       </ul>

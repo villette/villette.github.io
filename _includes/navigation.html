@@ -1,6 +1,6 @@
 <ul class="navbar-nav">
   {% for section in site.data.translations[page.lang].navigation %}
-    <li class="nav-item scrollspy">
+    <li class="nav-item">
       <a class="nav-link js-scroll-trigger" href="#{{ section[0] }}">{{ section[1] }}</a>
     </li>
   {% endfor %}
