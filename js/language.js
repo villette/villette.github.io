@@ -1,12 +1,11 @@
-var userLang = navigator.language || navigator.userLanguage;
-var redirectLang = 'fr';
+{
+  const userLang = navigator.language || navigator.userLanguage;
+  const supportedLangs = ['en', 'fr'];
+  let redirectLang = 'fr';
 
-if (userLang !== undefined) {
-  var supportedLangs = ['en', 'fr'];
-
-  if (supportedLangs.indexOf(userLang.split('-')[0]) !== -1) {
+  if (userLang !== undefined && supportedLangs.indexOf(userLang.split('-')[0]) !== -1) {
     redirectLang = userLang.split('-')[0];
   }
-}
 
-window.location.replace('/' + redirectLang + '/');
+  window.location.replace(`/${redirectLang}/`);
+}
