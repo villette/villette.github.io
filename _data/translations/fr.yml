@@ -11,7 +11,7 @@ navigation:
   contact: Contact
 
 about:
-  informations: "11 Batoum Gardens, First Floor · W67QB Londres, ROYAUME UNI · +44 7846 671981 ·"
+  informations: "11 Batoum Gardens · W67QB Londres, ROYAUME UNI · +44 7846 671981 ·"
   contact: Contactez-moi
   introduction: L'expérience que j'ai accumulée en presque 10 ans de présence sur le web m'a permis de devenir spécialiste de Drupal. Mon expertise me permet d'utiliser les fonctionnalités de Drupal afin de développer des sites fiables et perennes.
   resume:
@@ -32,7 +32,7 @@ experience:
         - Hébergement sur Acquia cloud services, usage de Bitbucket pipelines pour le devops
         - Utilisation avancée des services AWS (EC2, EB and Cognito entre autres)
       dates: janvier 2020 – maintenant
-    - title: Expert Drupal
+    - title: Développeur Drupal senior
       company:
         name: Druid Oy
         website: https://www.druid.fi/en

@@ -11,7 +11,7 @@ navigation:
   contact: Contact
 
 about:
-  informations: "11 Batoum Gardens, First Floor · W67QB London, UNITED KINGDOM · +44 7846 671981 ·"
+  informations: "11 Batoum Gardens · W67QB London, UNITED KINGDOM · +44 7846 671981 ·"
   contact: Contact me
   introduction: I am a Drupal architect and back-end developer with nearly 10 years of experience. My expertise resides in leveraging Drupal features to build robust and durable websites.
   resume:
@@ -32,7 +32,7 @@ experience:
         - Hosting on Acquia cloud services, devops using Bitbucket pipelines
         - Extensive use of AWS services (EC2, EB and Cognito among others)
       dates: January 2020 – now
-    - title: Drupal Architech
+    - title: Senior Drupal Developer
       company:
         name: Druid Oy
         website: https://www.druid.fi/en
