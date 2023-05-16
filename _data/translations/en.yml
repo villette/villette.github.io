@@ -11,9 +11,9 @@ navigation:
   contact: Contact
 
 about:
-  informations: "11 Batoum Gardens · W67QB London, UNITED KINGDOM · +44 7846 671981 ·"
+  informations: "11 Batoum Gardens · W6 7QB London, UNITED KINGDOM · +44 7846 671981 ·"
   contact: Contact me
-  introduction: I am a Drupal architect and back-end developer with nearly 10 years of experience. My expertise resides in leveraging Drupal features to build robust and durable websites.
+  introduction: I am a Drupal architect and back-end developer with nearly 15 years of experience. My expertise resides in leveraging Drupal features to build robust and durable websites.
   resume:
     url: /docs/CV%20Pierre%20Villette%20EN.pdf
     label: Download resume as PDF
@@ -31,7 +31,7 @@ experience:
         - Integration with 3rd party APIs and services
         - Hosting on Acquia cloud services, devops using Bitbucket pipelines
         - Extensive use of AWS services (EC2, EB and Cognito among others)
-      dates: January 2020 – now
+      dates: January 2020 – February 2023
     - title: Senior Drupal Developer
       company:
         name: Druid Oy
