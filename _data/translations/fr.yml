@@ -21,6 +21,16 @@ about:
 experience:
   title: Expérience professionnelle
   work:
+    - title: Ingénieur Logiciel
+      company:
+        name: Fitch Solutions
+        website: https://www.fitchsolutions.com/
+      location: Londres (ROYAUME UNI)
+      tasks:
+        - Utilisation de Drupal 9 comme plateforme de données pour les analystes financiers
+        - Intégration avec multiples API REST internes
+        - Utilisation avancée des services AWS (EKS, EC2, RDS, SQS, etc.)
+      dates: février 2023 - maintenant
     - title: Développeur Drupal senior
       company:
         name: Catch Digital
@@ -31,7 +41,7 @@ experience:
         - Intégration avec de nombreux services et API externes
         - Hébergement sur Acquia cloud services, usage de Bitbucket pipelines pour le devops
         - Utilisation avancée des services AWS (EC2, EB and Cognito entre autres)
-      dates: janvier 2020 – février 2023
+      dates: janvier 2020 - février 2023
     - title: Développeur Drupal senior
       company:
         name: Druid Oy
@@ -41,7 +51,7 @@ experience:
         - Architecture et lead technique de projets Drupal 8
         - Développement de sites découplés (headless) et exposition des données avec JSON:API
         - Maintenance et devops avec les solutions d'Amazee.io
-      dates: juin 2019 – décembre 2019
+      dates: juin 2019 - décembre 2019
     - title: Expert Drupal
       company:
         name: Clever-Age
@@ -51,7 +61,7 @@ experience:
         - Architecture et lead technique de projets Drupal 8
         - Intégration de solutions externes dans le workflow de contenus Drupal (PIM, ElasticSearch, API custom, etc.)
         - Développement de modules custom avancés pour des besoins clients
-      dates: avril 2017 – mai 2019
+      dates: avril 2017 - mai 2019
     - title: Développeur Drupal
       company:
         name: Floe Design + Technologies
@@ -60,7 +70,7 @@ experience:
       tasks:
         - Développement et maintenance de sites internet
         - Utilisation des frameworks Drupal 7 et Symfony 2
-      dates: mars 2011 – décembre 2015
+      dates: mars 2011 - décembre 2015
 
 education:
   title: Formations
@@ -89,7 +99,7 @@ skills:
       items:
         - label: "Langages web : HTML / xHTML, PHP 8, JavaScript, CSS"
           icon: fas fa-code
-        - label: "CMS / Frameworks PHP : Drupal 9/8, Symfony 5/4"
+        - label: "CMS / Frameworks PHP : Drupal 7-10, Symfony 6"
           icon: fab fa-php
         - label: "JavaScript : jQuery, NodeJS"
           icon: fab fa-js-square

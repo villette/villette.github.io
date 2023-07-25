@@ -21,6 +21,16 @@ about:
 experience:
   title: Experience
   work:
+    - title: Software Engineer
+      company:
+        name: Fitch Solutions
+        website: https://www.fitchsolutions.com/
+      location: London (UNITED KINGDOM)
+      tasks:
+        - Use of Drupal 9 as data platform for financial and research analysts
+        - Integration with other internal REST APIs solutions
+        - Extensive use of AWS services (EKS, EC2, RDS, SQS, etc.)
+      dates: February 2023 - now
     - title: Senior Drupal Developer
       company:
         name: Catch Digital
@@ -31,7 +41,7 @@ experience:
         - Integration with 3rd party APIs and services
         - Hosting on Acquia cloud services, devops using Bitbucket pipelines
         - Extensive use of AWS services (EC2, EB and Cognito among others)
-      dates: January 2020 – February 2023
+      dates: January 2020 - February 2023
     - title: Senior Drupal Developer
       company:
         name: Druid Oy
@@ -41,7 +51,7 @@ experience:
         - Architecture and tech lead of Drupal 8 projects
         - Development of decoupled websites (headless) with data available through JSON:API
         - Maintenance and devops using Amazee.io solutions
-      dates: June 2019 – December 2019
+      dates: June 2019 - December 2019
     - title: Drupal Expert
       company:
         name: Clever-Age
@@ -51,7 +61,7 @@ experience:
         - Architecture and tech lead of Drupal 8 projects
         - Integration of external solutions in the Drupal content workflow (PIM, ElasticSearch, custom APIs, etc.)
         - Development of advanced custom modules for the specific needs of clients
-      dates: April 2017 – May 2019
+      dates: April 2017 - May 2019
     - title: Drupal Developer
       company:
         name: Floe Design + Technologies
@@ -60,7 +70,7 @@ experience:
       tasks:
         - Websites development and maintenance
         - Use of frameworks and CMS like Drupal 7 and Symfony 2
-      dates: March 2011 – December 2015
+      dates: March 2011 - December 2015
 
 education:
   title: Education
@@ -89,7 +99,7 @@ skills:
       items:
         - label: "Web programming languages: HTML / xHTML, PHP 8, JavaScript, CSS"
           icon: fas fa-code
-        - label: "CMS / Frameworks PHP: Drupal 9/8, Symfony 5/4"
+        - label: "CMS / Frameworks PHP: Drupal 7-10, Symfony 6"
           icon: fab fa-php
         - label: "JavaScript: jQuery, NodeJS"
           icon: fab fa-js-square
