@@ -1,6 +1,6 @@
 layout:
-  title: Architecte / Développeur Drupal
-  description: Spécialiste de Drupal, mon expertise me permet d'utiliser ses fonctionnalités afin de développer des sites fiables et perennes.
+  title: Ingénieur logiciel
+  description: Spécialiste de PHP et Drupal, mon expertise me permet d'utiliser leurs fonctionnalités afin de développer des sites fiables et perennes.
 
 navigation:
   about: À propos
@@ -13,7 +13,7 @@ navigation:
 about:
   informations: "11 Batoum Gardens · W6 7QB Londres, ROYAUME UNI · +44 7846 671981 ·"
   contact: Contactez-moi
-  introduction: L'expérience que j'ai accumulée en près de 15 ans de présence sur le web m'a permis de devenir spécialiste de Drupal. Mon expertise me permet d'utiliser les fonctionnalités de Drupal afin de développer des sites fiables et perennes.
+  introduction: L'expérience que j'ai accumulée en près de 15 ans de présence sur le web m'a permis de devenir spécialiste PHP et Drupal. Mon expertise me permet d'utiliser leurs fonctionnalités afin de développer des sites fiables et perennes.
   resume:
     url: /docs/CV%20Pierre%20Villette%20FR.pdf
     label: Télécharger mon CV en PDF
@@ -48,8 +48,7 @@ experience:
         website: https://www.druid.fi/en
       location: Helsinki (FINLANDE)
       tasks:
-        - Architecture et lead technique de projets Drupal 8
-        - Développement de sites découplés (headless) et exposition des données avec JSON:API
+        - Architecture et lead technique de projets headless avec Drupal 8, Symfony et JSON:API
         - Maintenance et devops avec les solutions d'Amazee.io
       dates: juin 2019 - décembre 2019
     - title: Expert Drupal
@@ -58,7 +57,7 @@ experience:
         website: https://www.clever-age.com/fr/
       location: Bordeaux (FRANCE)
       tasks:
-        - Architecture et lead technique de projets Drupal 8
+        - Architecture et lead technique de projets Drupal 8 et Symfony 4
         - Intégration de solutions externes dans le workflow de contenus Drupal (PIM, ElasticSearch, API custom, etc.)
         - Développement de modules custom avancés pour des besoins clients
       dates: avril 2017 - mai 2019
@@ -101,7 +100,7 @@ skills:
           icon: fas fa-code
         - label: "CMS / Frameworks PHP : Drupal 7-10, Symfony 6"
           icon: fab fa-php
-        - label: "JavaScript : jQuery, NodeJS"
+        - label: "JavaScript : Vanilla, jQuery, NodeJS"
           icon: fab fa-js-square
         - label: "Langages de scripts : Perl, Python, scripts UNIX (SH, BASH, KSH)"
           icon: fas fa-terminal
@@ -109,13 +108,13 @@ skills:
       items:
         - label: "MySQL/MariaDB : connaissance étendue du logiciel, utilisation de nombreux outils et de la ligne de commande"
           icon: fas fa-database
-        - label: PostgreSQL, SQLite, etc.
+        - label: Oracle, PostgreSQL, SQLite, etc.
           icon: fas fa-database
     - title: Autres outils
       items:
-        - label: "Outils DevOps : Docker, Vagrant, LXC, Ansible, Jenkins, Capistrano"
+        - label: "Outils DevOps : Docker, Kubernetes, LXC/LXD, Ansible"
           icon: fab fa-docker
-        - label: "Hébergement: AWS, Amazee.io, Acquia Cloud, Pantheon.io, DigitalOcean"
+        - label: "Hébergement: AWS (EC2, EKS), Acquia Cloud, Pantheon.io, DigitalOcean"
           icon: fas fa-cog
         - label: "Moteurs de recherche: ElasticSearch, Solr"
           icon: fas fa-search
