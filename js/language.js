@@ -1,4 +1,4 @@
-{
+(() => {
   const userLang = navigator.language || navigator.userLanguage;
   const supportedLangs = ['en', 'fr'];
   let redirectLang = 'fr';
@@ -8,4 +8,4 @@
   }
 
   window.location.replace(`/${redirectLang}/`);
-}
+})();
