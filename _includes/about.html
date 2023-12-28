@@ -4,8 +4,9 @@
 
     <div class="subheading mb-5">
       {{ site.data.translations[page.lang].about.informations }}
-      <script src="/js/mailto.js"></script>
-      <noscript><a href="#contact">{{ site.data.translations[page.lang].about.contact }}</a></noscript>
+      <noscript id="mailto">
+        <a href="#contact">{{ site.data.translations[page.lang].about.contact }}</a>
+      </noscript>
     </div>
 
     <p class="lead">{{ site.data.translations[page.lang].about.introduction }}</p>
