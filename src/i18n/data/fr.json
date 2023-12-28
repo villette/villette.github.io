@@ -1,0 +1,269 @@
+{
+  "layout": {
+    "title": "Pierre Villette - Ingénieur logiciel",
+    "description": "Spécialiste de PHP et Drupal, mon expertise me permet d'utiliser leurs fonctionnalités afin de développer des sites fiables et perennes."
+  },
+  "navigation": [
+    {
+      "href": "#about",
+      "label": "À propos"
+    },
+    {
+      "href": "#experience",
+      "label": "Expériences"
+    },
+    {
+      "href": "#education",
+      "label": "Formations"
+    },
+    {
+      "href": "#skills",
+      "label": "Compétences"
+    },
+    {
+      "href": "#interests",
+      "label": "Intérêts"
+    },
+    {
+      "href": "#contact",
+      "label": "Contact"
+    }
+  ],
+  "about": {
+    "informations": "11 Batoum Gardens · W6 7QB Londres, ROYAUME UNI · +44 7846 671981 · ",
+    "introduction": "L'expérience que j'ai accumulée en près de 15 ans de présence sur le web m'a permis de devenir spécialiste PHP et Drupal. Mon expertise me permet d'utiliser leurs fonctionnalités afin de développer des sites fiables et perennes.",
+    "resume": {
+      "url": "/docs/CV%20Pierre%20Villette%20FR.pdf",
+      "label": "Télécharger mon CV en PDF"
+    },
+    "socialMedia": [
+      {
+        "name": "LinkedIn",
+        "href": "https://www.linkedin.com/in/pierrevillette",
+        "icon": "fab fa-linkedin-in"
+      },
+      {
+        "name": "Drupal.org",
+        "href": "https://www.drupal.org/u/villette",
+        "icon": "fab fa-drupal"
+      },
+      {
+        "name": "Github",
+        "href": "https://github.com/villette",
+        "icon": "fab fa-github"
+      },
+      {
+        "name": "Facebook",
+        "href": "https://www.facebook.com/villette.pierre",
+        "icon": "fab fa-facebook-f"
+      }
+    ]
+  },
+  "experience": {
+    "title": "Expérience professionnelle",
+    "work": [
+      {
+        "title": "Ingénieur Logiciel",
+        "company": {
+          "name": "Fitch Solutions",
+          "website": "https://www.fitchsolutions.com/"
+        },
+        "location": "Londres (ROYAUME UNI)",
+        "tasks": [
+          "Utilisation de Drupal 9 comme plateforme de données pour les analystes financiers",
+          "Intégration avec multiples API REST internes",
+          "Utilisation avancée des services AWS (EKS, EC2, RDS, SQS, etc.)"
+        ],
+        "dates": "février 2023 - maintenant"
+      },
+      {
+        "title": "Développeur Drupal senior",
+        "company": {
+          "name": "Catch Digital",
+          "website": "https://www.catchdigital.com/"
+        },
+        "location": "Londres (ROYAUME UNI)",
+        "tasks": [
+          "Utilisation de Drupal 8 et Drupal 9 pour la création de sites web professionnels",
+          "Intégration avec de nombreux services et API externes",
+          "Hébergement sur Acquia cloud services, usage de Bitbucket pipelines pour le devops",
+          "Utilisation avancée des services AWS (EC2, EB and Cognito entre autres)"
+        ],
+        "dates": "janvier 2020 - février 2023"
+      },
+      {
+        "title": "Développeur Drupal senior",
+        "company": {
+          "name": "Druid Oy",
+          "website": "https://www.druid.fi/en"
+        },
+        "location": "Helsinki (FINLANDE)",
+        "tasks": [
+          "Architecture et lead technique de projets headless avec Drupal 8, Symfony et JSON:API",
+          "Maintenance et devops avec les solutions d'Amazee.io"
+        ],
+        "dates": "juin 2019 - décembre 2019"
+      },
+      {
+        "title": "Expert Drupal",
+        "company": {
+          "name": "Clever-Age",
+          "website": "https://www.clever-age.com/fr/"
+        },
+        "location": "Bordeaux (FRANCE)",
+        "tasks": [
+          "Architecture et lead technique de projets Drupal 8 et Symfony 4",
+          "Intégration de solutions externes dans le workflow de contenus Drupal (PIM, ElasticSearch, API custom, etc.)",
+          "Développement de modules custom avancés pour des besoins clients"
+        ],
+        "dates": "avril 2017 - mai 2019"
+      },
+      {
+        "title": "Développeur Drupal",
+        "company": {
+          "name": "Floe Design + Technologies",
+          "website": "https://www.floe.ca/fr/"
+        },
+        "location": "Montréal (CANADA)",
+        "tasks": [
+          "Développement et maintenance de sites internet",
+          "Utilisation des frameworks Drupal 7 et Symfony 2"
+        ],
+        "dates": "mars 2011 - décembre 2015"
+      }
+    ]
+  },
+  "education": {
+    "title": "Formations",
+    "diplomas": [
+      {
+        "label": "International Master of Computer Science",
+        "school": "Supinfo Montréal (CANADA)",
+        "description": "Formation de technicien supérieur en informatique",
+        "date": "Octobre 2010"
+      },
+      {
+        "label": "Licence Professionnelle Informatique Répartie et Mobile",
+        "school": "IUT de La Rochelle (FRANCE)",
+        "description": "Formation d'informatique orientée réseau et développement",
+        "date": "Juin 2008"
+      }
+    ]
+  },
+  "skills": {
+    "title": "Compétences",
+    "groups": [
+      {
+        "title": "Certifications",
+        "items": [
+          {
+            "label": "Acquia Certified Developer - Drupal 9",
+            "icon": "fas fa-certificate"
+          },
+          {
+            "label": "Acquia Certified Back End Specialist - Drupal 9",
+            "icon": "fas fa-certificate"
+          },
+          {
+            "label": "Acquia Certified Front End Specialist - Drupal 9",
+            "icon": "fas fa-certificate"
+          }
+        ]
+      },
+      {
+        "title": "Développement",
+        "items": [
+          {
+            "label": "Langages web : HTML / xHTML, PHP 8, JavaScript, CSS",
+            "icon": "fas fa-code"
+          },
+          {
+            "label": "CMS / Frameworks PHP : Drupal 7-10, Symfony 6",
+            "icon": "fab fa-php"
+          },
+          {
+            "label": "JavaScript : Vanilla, jQuery, NodeJS",
+            "icon": "fab fa-js-square"
+          },
+          {
+            "label": "Langages de scripts : Perl, Python, scripts UNIX (SH, BASH, KSH)",
+            "icon": "fas fa-terminal"
+          }
+        ]
+      },
+      {
+        "title": "Bases de données",
+        "items": [
+          {
+            "label": "MySQL/MariaDB : connaissance étendue du logiciel, utilisation de nombreux outils et de la ligne de commande",
+            "icon": "fas fa-database"
+          },
+          {
+            "label": "Oracle, PostgreSQL, SQLite, etc.",
+            "icon": "fas fa-database"
+          }
+        ]
+      },
+      {
+        "title": "Autres outils",
+        "items": [
+          {
+            "label": "Outils DevOps : Docker, Kubernetes, LXC/LXD, Ansible",
+            "icon": "fab fa-docker"
+          },
+          {
+            "label": "Hébergement: AWS (EC2, EKS), Acquia Cloud, Pantheon.io, DigitalOcean",
+            "icon": "fas fa-cog"
+          },
+          {
+            "label": "Moteurs de recherche: ElasticSearch, Solr",
+            "icon": "fas fa-search"
+          }
+        ]
+      },
+      {
+        "title": "Langues parlées",
+        "items": [
+          {
+            "label": "Français : langue maternelle",
+            "icon": "far fa-flag"
+          },
+          {
+            "label": "Anglais : courant",
+            "icon": "far fa-flag"
+          },
+          {
+            "label": "Espagnol : avancé",
+            "icon": "far fa-flag"
+          }
+        ]
+      }
+    ]
+  },
+  "interests": {
+    "title": "Intérêts",
+    "lines": [
+      "Sur un plan plus personnel, je me considère comme un grand fan de toute sorte de sports, particulièrement le rugby, que je pratique depuis mon adolescence.",
+      "Quand je ne fais pas de sport, j'apprécie occasionnellement les jeux vidéos, mais aussi beaucoup de genres de films et séries TV, de la comédie à la science fiction, en passant par la fantasy.",
+      "J'aime aussi voyager, découvrir de nouveaux pays, ainsi que leurs cultures et leurs gastronomie, rencontrer de nouvelles personnes et faire de nouvelles expériences."
+    ]
+  },
+  "contact": {
+    "title": "Contact",
+    "success": "Votre message a bien été envoyé.",
+    "error": "Une erreur est apparue, veuillez réessayer plus tard.",
+    "labels": {
+      "name": "Nom",
+      "email": "Adresse courriel",
+      "subject": "Sujet",
+      "message": "Message",
+      "submit": "Envoyer"
+    },
+    "placeholders": {
+      "name": "Nom",
+      "email": "Courriel",
+      "subject": "Sujet",
+      "message": "Message"
+    }
+  }
+}

@@ -1,0 +1,270 @@
+{
+  "layout": {
+    "title": "Pierre Villette - Software Engineer",
+    "description": "I am a PHP Software Engineer, my expertise resides in leveraging PHP and Drupal features to build robust and durable websites."
+  },
+  "navigation": [
+    {
+      "href": "#about",
+      "label": "About"
+    },
+    {
+      "href": "#experience",
+      "label": "Experience"
+    },
+    {
+      "href": "#education",
+      "label": "Education"
+    },
+    {
+      "href": "#skills",
+      "label": "Skills"
+    },
+    {
+      "href": "#interests",
+      "label": "Interests"
+    },
+    {
+      "href": "#contact",
+      "label": "Contact"
+    }
+  ],
+  "about": {
+    "informations": "11 Batoum Gardens · W6 7QB London, UNITED KINGDOM · +44 7846 671981 · ",
+    "introduction": "I am a PHP Software Engineer with nearly 15 years of experience. My expertise resides in leveraging PHP and Drupal features to build robust and durable websites.",
+    "resume": {
+      "url": "/docs/CV%20Pierre%20Villette%20EN.pdf",
+      "label": "Download resume as PDF"
+    },
+    "socialMedia": [
+      {
+        "name": "LinkedIn",
+        "href": "https://www.linkedin.com/in/pierrevillette",
+        "icon": "fab fa-linkedin-in"
+      },
+      {
+        "name": "Drupal.org",
+        "href": "https://www.drupal.org/u/villette",
+        "icon": "fab fa-drupal"
+      },
+      {
+        "name": "Github",
+        "href": "https://github.com/villette",
+        "icon": "fab fa-github"
+      },
+      {
+        "name": "Facebook",
+        "href": "https://www.facebook.com/villette.pierre",
+        "icon": "fab fa-facebook-f"
+      }
+    ]
+  },
+  "experience": {
+    "title": "Experience",
+    "work": [
+      {
+        "title": "Software Engineer",
+        "company": {
+          "name": "Fitch Solutions",
+          "website": "https://www.fitchsolutions.com/"
+        },
+        "location": "London (UNITED KINGDOM)",
+        "tasks": [
+          "Use of Drupal 9 as data platform for financial and research analysts",
+          "Integration with other internal REST APIs solutions",
+          "Extensive use of AWS services (EKS, EC2, RDS, SQS, etc.)"
+        ],
+        "dates": "February 2023 - now"
+      },
+      {
+        "title": "Senior Drupal Developer",
+        "company": {
+          "name": "Catch Digital",
+          "website": "https://www.catchdigital.com/"
+        },
+        "location": "London (UNITED KINGDOM)",
+        "tasks": [
+          "Use of Drupal 8 and Drupal 9 to create professional grade websites",
+          "Integration with 3rd party APIs and services",
+          "Hosting on Acquia cloud services, devops using Bitbucket pipelines",
+          "Extensive use of AWS services (EC2, EB and Cognito among others)"
+        ],
+        "dates": "January 2020 - February 2023"
+      },
+      {
+        "title": "Senior Drupal Developer",
+        "company": {
+          "name": "Druid Oy",
+          "website": "https://www.druid.fi/en"
+        },
+        "location": "Helsinki (FINLAND)",
+        "tasks": [
+          "Headless web development using Drupal 8 and Symfony",
+          "Development of decoupled websites (headless) with data available through JSON:API",
+          "Maintenance and devops using Amazee.io solutions"
+        ],
+        "dates": "June 2019 - December 2019"
+      },
+      {
+        "title": "Drupal Expert",
+        "company": {
+          "name": "Clever-Age",
+          "website": "https://www.clever-age.com/en/"
+        },
+        "location": "Bordeaux (FRANCE)",
+        "tasks": [
+          "Line management and tech lead of PHP projects using Drupal 8 and Symfony 4",
+          "Integration of external solutions in the Drupal content workflow (PIM, ElasticSearch, custom APIs, etc.)",
+          "Development of advanced custom modules for the specific needs of clients"
+        ],
+        "dates": "April 2017 - May 2019"
+      },
+      {
+        "title": "Drupal Developer",
+        "company": {
+          "name": "Floe Design + Technologies",
+          "website": "https://www.floe.ca/en/"
+        },
+        "location": "Montreal (CANADA)",
+        "tasks": [
+          "Websites development and maintenance",
+          "Use of frameworks and CMS like Drupal 7 and Symfony 2"
+        ],
+        "dates": "March 2011 - December 2015"
+      }
+    ]
+  },
+  "education": {
+    "title": "Education",
+    "diplomas": [
+      {
+        "label": "International Master of Computer Science",
+        "school": "Supinfo Montreal (CANADA)",
+        "description": "Qualified technician in computer science training",
+        "date": "October 2010"
+      },
+      {
+        "label": "Licence Professionnelle Informatique Répartie et Mobile",
+        "school": "IUT de La Rochelle (FRANCE)",
+        "description": "Network and development oriented computing training",
+        "date": "June 2008"
+      }
+    ]
+  },
+  "skills": {
+    "title": "Skills",
+    "groups": [
+      {
+        "title": "Certifications",
+        "items": [
+          {
+            "label": "Acquia Certified Developer - Drupal 9",
+            "icon": "fas fa-certificate"
+          },
+          {
+            "label": "Acquia Certified Back End Specialist - Drupal 9",
+            "icon": "fas fa-certificate"
+          },
+          {
+            "label": "Acquia Certified Front End Specialist - Drupal 9",
+            "icon": "fas fa-certificate"
+          }
+        ]
+      },
+      {
+        "title": "Development",
+        "items": [
+          {
+            "label": "Web programming languages: HTML / xHTML, PHP 8, JavaScript, CSS",
+            "icon": "fas fa-code"
+          },
+          {
+            "label": "CMS / Frameworks PHP: Drupal 7-10, Symfony 6",
+            "icon": "fab fa-php"
+          },
+          {
+            "label": "JavaScript: Vanilla, jQuery, NodeJS",
+            "icon": "fab fa-js-square"
+          },
+          {
+            "label": "Script languages: Perl, Python, scripts UNIX (SH, BASH, KSH)",
+            "icon": "fas fa-terminal"
+          }
+        ]
+      },
+      {
+        "title": "Databases",
+        "items": [
+          {
+            "label": "MySQL/MariaDB: extended knowledge of the software, use of many tools including command line interface",
+            "icon": "fas fa-database"
+          },
+          {
+            "label": "Oracle, PostgreSQL, SQLite, etc.",
+            "icon": "fas fa-database"
+          }
+        ]
+      },
+      {
+        "title": "Other tools",
+        "items": [
+          {
+            "label": "DevOps tools: Docker, Kubernetes, LXC/LXD, Ansible",
+            "icon": "fab fa-docker"
+          },
+          {
+            "label": "Hosting: AWS (EC2, EKS), Acquia Cloud, Pantheon.io, DigitalOcean",
+            "icon": "fas fa-cog"
+          },
+          {
+            "label": "Search engines: ElasticSearch, Solr",
+            "icon": "fas fa-search"
+          }
+        ]
+      },
+      {
+        "title": "Spoken languages",
+        "items": [
+          {
+            "label": "French: native language",
+            "icon": "far fa-flag"
+          },
+          {
+            "label": "English: fluent",
+            "icon": "far fa-flag"
+          },
+          {
+            "label": "Spanish: advanced",
+            "icon": "far fa-flag"
+          }
+        ]
+      }
+    ]
+  },
+  "interests": {
+    "title": "Interests",
+    "lines": [
+      "On a more personal note, I would say that I'm a big fan of all kind of sports, and especially rugby, which I've been practicing since my teenage years.",
+      "When I'm not exercising, I enjoy the occasional video game, or watching movies and TV shows of a wide range of genres, from fantasy to comedy, or even sci-fi.",
+      "I also love to travel, discover the world, new foods and cultures, meeting new people and making new experiences."
+    ]
+  },
+  "contact": {
+    "title": "Contact",
+    "success": "Your message has been sent successfully.",
+    "error": "An error occurred, please try again later.",
+    "labels": {
+      "name": "Your name",
+      "email": "Your email address",
+      "subject": "Subject",
+      "message": "Message",
+      "submit": "Submit"
+    },
+    "placeholders": {
+      "name": "Name",
+      "email": "Email",
+      "subject": "Subject",
+      "message": "Message"
+    }
+  }
+}

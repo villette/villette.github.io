@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9 http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd" xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+  <url>
+    <loc>https://villette.github.io/en/</loc>
+  </url>
+  <url>
+    <loc>https://villette.github.io/fr/</loc>
+  </url>
+  <url>
+    <loc>https://villette.github.io/docs/CV%20Pierre%20Villette%20EN.pdf</loc>
+    <lastmod>2023-09-05T12:25:55+00:00</lastmod>
+  </url>
+  <url>
+    <loc>https://villette.github.io/docs/CV%20Pierre%20Villette%20FR.pdf</loc>
+    <lastmod>2023-09-05T12:25:55+00:00</lastmod>
+  </url>
+  <url>
+    <loc>https://villette.github.io/</loc>
+    <lastmod>2023-09-05T12:25:55+00:00</lastmod>
+  </url>
+</urlset>
