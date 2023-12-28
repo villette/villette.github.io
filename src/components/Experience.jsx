@@ -1,4 +1,4 @@
-import React from 'react';
+import { Fragment } from 'react';
 
 export default function Experience({ title, company, location, tasks, dates }) {
   return (
@@ -12,7 +12,7 @@ export default function Experience({ title, company, location, tasks, dates }) {
 
         <p>
           {tasks.map((item, index) => (
-            <React.Fragment key={index}>{item} <br /></React.Fragment>
+            <Fragment key={index}>{item} <br /></Fragment>
           ))}
         </p>
       </div>

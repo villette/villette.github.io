@@ -2,13 +2,16 @@ import React, { useEffect } from 'react';
 import { useRef } from 'react';
 import { ScrollSpy } from 'bootstrap';
 
-export default function Navigation({ links, currentLanguage, supportedLanguages }) {
+import LanguageLink from './LanguageLink';
+
+export default function Navigation({ links, currentLanguage, setCurrentLanguage, supportedLanguages }) {
   const sideNav = useRef(null);
 
   useEffect(() => {
     new ScrollSpy(document.body, {
       target: sideNav,
-      offset: 74,
+      rootMargin: '0px 0px -40%',
+      smoothScroll: true,
     });
   }, []);
 
@@ -36,15 +39,13 @@ export default function Navigation({ links, currentLanguage, supportedLanguages 
           <li className='nav-item'>
             <span className='nav-link mt-3'>
               {supportedLanguages.map((item, index) => (
-                currentLanguage === item ?
-                  <React.Fragment key={index}>
-                    <span className='nav-link d-inline text-white'>{item.toUpperCase()}</span>
-                    {index !== supportedLanguages.length - 1 && '/'}
-                  </React.Fragment> :
-                  <React.Fragment key={index}>
-                    <a className='nav-link d-inline' href={`/?l=${item}`}>{item.toUpperCase()}</a>
-                    {index !== supportedLanguages.length - 1 && '/'}
-                  </React.Fragment>
+                <LanguageLink
+                  key={index}
+                  language={item}
+                  isActive={currentLanguage === item}
+                  isNotLast={index !== supportedLanguages.length - 1}
+                  setCurrentLanguage={setCurrentLanguage}
+                />
               ))}
             </span>
           </li>
