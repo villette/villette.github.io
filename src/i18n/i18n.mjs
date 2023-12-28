@@ -1,7 +1,7 @@
 export const supportedLanguages = ['en', 'fr'];
 
-const path = location.pathname.split('/');
-export const currentLanguage = path[1];
+const urlParams = new URLSearchParams(location.search);
+export const currentLanguage = urlParams.get('l');
 
 if ((!supportedLanguages.includes(currentLanguage))) {
   // Define the fallback language
@@ -14,5 +14,6 @@ if ((!supportedLanguages.includes(currentLanguage))) {
     redirectLanguage = userLanguage.split('-')[0];
   }
 
-  window.location.replace(`/${redirectLanguage}`);
+  urlParams.set('l', redirectLanguage);
+  location.replace(`${location.origin}?${urlParams.toString()}`);
 }

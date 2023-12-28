@@ -42,7 +42,7 @@ export default function Navigation({ links, currentLanguage, supportedLanguages 
                     {index !== supportedLanguages.length - 1 && '/'}
                   </React.Fragment> :
                   <React.Fragment key={index}>
-                    <a className='nav-link d-inline' href={`/${item}`}>{item.toUpperCase()}</a>
+                    <a className='nav-link d-inline' href={`/?l=${item}`}>{item.toUpperCase()}</a>
                     {index !== supportedLanguages.length - 1 && '/'}
                   </React.Fragment>
               ))}
