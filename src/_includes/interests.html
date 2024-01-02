@@ -1,0 +1,9 @@
+<section id="interests" class="resume-section">
+  <div class="resume-section-content">
+    <h2 class="mb-5">{{ translations[page.lang].interests.title }}</h2>
+
+    {% for line in translations[page.lang].interests.lines %}
+      <p{% if forloop.last %} class="mb-0"{% endif %}>{{ line }}</p>
+    {% endfor %}
+  </div>
+</section>

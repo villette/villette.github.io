@@ -1,0 +1,19 @@
+<section id="skills" class="resume-section">
+  <div class="resume-section-content">
+    <h2 class="mb-5">{{ translations[page.lang].skills.title }}</h2>
+
+    {% for group in translations[page.lang].skills.groups %}
+      <div class="subheading mb-3">{{ group.title }}</div>
+      <ul class="fa-ul{% if forloop.last %} mb-0{% endif %}">
+        {% for item in group.items %}
+          <li>
+            <span class="fa-li">
+              <i class="{{ item.icon }}"></i>
+            </span>
+            {{ item.label }}
+          </li>
+        {% endfor %}
+      </ul>
+    {% endfor %}
+  </div>
+</section>

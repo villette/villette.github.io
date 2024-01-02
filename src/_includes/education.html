@@ -1,0 +1,19 @@
+<section id="education" class="resume-section">
+  <div class="resume-section-content">
+    <h2 class="mb-5">{{ translations[page.lang].education.title }}</h2>
+
+    {% for diploma in translations[page.lang].education.diplomas %}
+      <div class="d-flex flex-column flex-md-row justify-content-between{% unless forloop.last %} mb-5{% endunless %}">
+        <div class="flex-grow-1">
+          <h3 class="mb-0">{{ diploma.label }}</h3>
+          <div class="subheading">{{ diploma.school }}</div>
+          <div>{{ diploma.description }}</div>
+        </div>
+
+        <div class="flex-shrink-0">
+          <span class="text-primary">{{ diploma.date }}</span>
+        </div>
+      </div>
+    {% endfor %}
+  </div>
+</section>

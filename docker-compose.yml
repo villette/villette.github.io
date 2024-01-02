@@ -1,0 +1,10 @@
+services:
+  eleventy:
+    image: node
+    entrypoint: bash -c "npm install && npm run dev"
+    ports:
+      - 8080:8080
+      - 24678:24678
+    volumes:
+      - .:/srv/app
+    working_dir: /srv/app

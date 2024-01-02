@@ -1,0 +1,21 @@
+<ul class="navbar-nav">
+  {% for section in translations[page.lang].navigation %}
+    <li class="nav-item">
+      <a class="nav-link js-scroll-trigger" href="#{{ section[0] }}">{{ section[1] }}</a>
+    </li>
+  {% endfor %}
+
+  <li class="nav-item">
+    <span class="nav-link mt-3">
+      {% for language in translations %}
+        {% if language[0] == page.lang %}
+          <span class="nav-link d-inline text-white">{{ language[0] }}</span>
+        {% else %}
+          <a class="nav-link d-inline" href="/{{ language[0] }}">{{ language[0] }}</a>
+        {% endif %}
+
+        {% unless forloop.last %}/{% endunless %}
+      {% endfor %}
+    </span>
+  </li>
+</ul>

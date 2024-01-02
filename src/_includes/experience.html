@@ -1,0 +1,25 @@
+<section id="experience" class="resume-section">
+  <div class="resume-section-content">
+    <h2 class="mb-5">{{ translations[page.lang].experience.title }}</h2>
+
+    {% for experience in translations[page.lang].experience.work %}
+      <div class="d-flex flex-column flex-md-row justify-content-between{% unless forloop.last %} mb-5{% endunless %}">
+        <div class="flex-grow-1">
+          <h3 class="mb-0">{{ experience.title }}</h3>
+          <div class="subheading mb-3">
+            <a href="{{ experience.company.website }}" target="_blank" rel="noopener noreferrer">{{ experience.company.name }}</a> · {{ experience.location }}
+          </div>
+          <p>
+            {% for task in experience.tasks %}
+              {{ task }}{% unless forloop.last %} <br>{% endunless %}
+            {% endfor %}
+          </p>
+        </div>
+
+        <div class="flex-shrink-0">
+          <span class="text-primary">{{ experience.dates }}</span>
+        </div>
+      </div>
+    {% endfor %}
+  </div>
+</section>
