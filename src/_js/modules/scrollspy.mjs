@@ -1,10 +1,8 @@
-export default () => {
-  const sideNav = document.body.querySelector('#sideNav');
+import { ScrollSpy } from 'bootstrap';
 
-  if (sideNav) {
-    new bootstrap.ScrollSpy(document.body, {
-      target: '#sideNav',
-      rootMargin: '0px 0px -40%',
-    });
-  };
+export default () => {
+  new ScrollSpy(document.body, {
+    target: '#sideNav',
+    rootMargin: '0px 0px -40%',
+  });
 };

@@ -1,30 +1,32 @@
+import { Toast } from 'bootstrap';
+
 export default () => {
   const contactForm = document.getElementById('contact-form');
-  const toastElement = contactForm.querySelector('.toast');
-  const toastBody = toastElement.querySelector('.toast-body');
 
-  formcarry({
-    form: 'WMrdOCSAvlF',
-    element: '#contact-form',
-    onSuccess: (response) => {
-      toastElement.classList.remove('bg-success', 'bg-danger');
-      toastElement.classList.add('bg-success');
-      toastBody.innerHTML = toastBody.getAttribute('data-success');
+  const onResponse = (response) => {
+    const messageType = response?.ok ? 'success' : 'danger';
+    const toastElement = contactForm.querySelector('.toast');
+    const toastBody = toastElement.querySelector('.toast-body');
 
-      const toast = new bootstrap.Toast(toastElement);
-      toast.show();
+    toastElement.classList.remove('bg-success', 'bg-danger');
+    toastElement.classList.add(`bg-${messageType}`);
+    toastBody.textContent = toastBody.getAttribute(`data-${messageType}`);
 
-      contactForm.querySelector('#contact-form-submit').setAttribute('disabled', 'disabled');
-    },
-    onError: (error) => {
-      toastElement.classList.remove('bg-success', 'bg-danger');
-      toastElement.classList.add('bg-danger');
-      toastBody.innerHTML = toastBody.getAttribute('data-error');
+    Toast.getOrCreateInstance(toastElement).show();
+  };
 
-      const toast = new bootstrap.Toast(toastElement);
-      toast.show();
+  contactForm.addEventListener('submit', (event) => {
+    event.preventDefault();
 
-      contactForm.querySelector('#contact-form-submit').setAttribute('disabled', 'disabled');
-    }
+    const submitButton = contactForm.querySelector('.submit');
+    submitButton.setAttribute('disabled', 'disabled');
+
+    fetch(contactForm.action, {
+      method: contactForm.method,
+      headers: { 'Accept': 'text/html' },
+      body: new FormData(contactForm),
+    })
+    .then(onResponse)
+    .catch(onResponse);
   });
 };

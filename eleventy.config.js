@@ -5,17 +5,17 @@ const esbuild = require('esbuild');
 
 module.exports = (eleventyConfig) => {
   eleventyConfig.addPlugin(EleventyI18nPlugin, {
-    // any valid BCP 47-compatible language tag is supported
     defaultLanguage: 'en',
   });
 
   eleventyConfig.addPlugin(eleventySass, {
     sass: {
-      sourceMap: true,
+      loadPaths: [`${__dirname}/node_modules`],
+      sourceMap: process.env.NODE_ENVIRONMENT != 'production',
       sourceMapIncludeSources: true,
     },
     compileOptions: {
-      permalink: function (contents, inputPath) {
+      permalink: (contents, inputPath) => {
         return (data) => {
           return data.page.filePathStem.replace(/^\/_sass\//, '/css/') + '.css';
         };
@@ -33,7 +33,7 @@ module.exports = (eleventyConfig) => {
       outdir: 'dist/js',
       bundle: true,
       minify: true,
-      sourcemap: true,
+      sourcemap: process.env.NODE_ENVIRONMENT != 'production',
     });
   });
   eleventyConfig.addWatchTarget('./src/_js/');
