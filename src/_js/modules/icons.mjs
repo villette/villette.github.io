@@ -8,6 +8,7 @@ import {
   faCog,
   faSearch,
   faFilePdf,
+  faCircleNotch,
 } from '@fortawesome/free-solid-svg-icons';
 import {
   faPhp,
@@ -29,6 +30,7 @@ export default () => {
     faCog,
     faSearch,
     faFilePdf,
+    faCircleNotch,
     faPhp,
     faJsSquare,
     faDocker,
