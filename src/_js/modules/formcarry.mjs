@@ -23,6 +23,7 @@ export default () => {
       contactForm.reset();
 
       initCaptcha();
+      contactForm.classList.remove('was-validated');
       contactFormFieldset.removeAttribute('disabled');
     } else {
       setTimeout(() => {
@@ -31,6 +32,15 @@ export default () => {
       }, 15000);
     }
   };
+
+  contactForm.addEventListener('submit', (event) => {
+    if (!contactForm.checkValidity()) {
+      event.preventDefault();
+      event.stopImmediatePropagation();
+    }
+
+    contactForm.classList.add('was-validated');
+  });
 
   contactForm.addEventListener('submit', (event) => {
     event.preventDefault();
