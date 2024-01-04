@@ -1,14 +1,11 @@
-export default () => {
-  const navbarToggler = document.body.querySelector('.navbar-toggler');
-  const responsiveNavItems = [].slice.call(
-    document.querySelectorAll('#navbarResponsive .nav-link')
-  );
+import { Collapse } from 'bootstrap';
 
-  responsiveNavItems.map((responsiveNavItem) => {
-    responsiveNavItem.addEventListener('click', () => {
-      if (window.getComputedStyle(navbarToggler).display !== 'none') {
-        navbarToggler.click();
-      }
-    });
-  });
+export default () => {
+  const navbarCollapse = document.getElementById('navbar-collapse');
+  const navbarItems = document.querySelectorAll('#navbar .js-scroll-trigger');
+  const bsCollapse = Collapse.getOrCreateInstance(navbarCollapse, { toggle: false });
+
+  navbarItems.forEach((item) => {
+    item.addEventListener('click', () => { bsCollapse.hide() });
+  })
 };

@@ -2,17 +2,18 @@
 // Styles
 //
 
+// Import fonts
+@import "https://fonts.googleapis.com/css?family=Saira+Extra+Condensed:500,700";
+@import "https://fonts.googleapis.com/css?family=Muli:400,400i,800,800i";
+
 // Import variables
 @import "./variables.scss";
 
 // Import Bootstrap
-@import "../../node_modules/bootstrap/scss/bootstrap.scss";
+@import "bootstrap/scss/bootstrap.scss";
 
 // Global CSS
 @import "./global.scss";
-
-// Animations
-@import "./animations.scss";
 
 // Components
 @import "./components/sidenav.scss";

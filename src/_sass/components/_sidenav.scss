@@ -1,8 +1,8 @@
-// 
+//
 // Sidenav
-// 
+//
 
-#sideNav {
+.navbar {
     padding-left: 1rem;
     padding-right: 1rem;
 
@@ -20,7 +20,7 @@
 }
 
 @include media-breakpoint-up(lg) {
-    #sideNav {
+    .navbar {
         padding-left: 0;
         padding-right: 0;
         text-align: center;

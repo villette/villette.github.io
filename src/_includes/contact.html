@@ -3,39 +3,49 @@
     <h2 class="mb-5">{{ translations[page.lang].contact.title }}</h2>
 
     <form id="contact-form" action="https://formcarry.com/s/WMrdOCSAvlF" method="post" accept-charset="UTF-8">
-      <div class="toast-container position-fixed top-0 end-0 p-3">
-        <div class="toast align-items-center border-0 text-light" role="alert" aria-live="assertive" aria-atomic="true">
-          <div class="d-flex">
-            <div class="toast-body" data-success="{{ translations[page.lang].contact.success }}" data-error="{{ translations[page.lang].contact.error }}"></div>
-            <button type="button" class="btn-close btn-close-white me-2 m-auto" data-bs-dismiss="toast" aria-label="Close"></button>
+      <fieldset>
+        <div class="toast-container position-fixed top-0 end-0 p-3" data-bs-theme="dark">
+          <div class="toast align-items-center border-0 text-light" role="alert" aria-live="assertive" aria-atomic="true">
+            <div class="d-flex">
+              <div class="toast-body" data-success="{{ translations[page.lang].contact.success }}" data-danger="{{ translations[page.lang].contact.error }}"></div>
+              <button type="button" class="btn-close me-2 m-auto" data-bs-dismiss="toast" aria-label="Close"></button>
+            </div>
           </div>
         </div>
-      </div>
 
-      <div class="form-floating mb-3">
-        <input id="input-name" class="form-control" type="text" name="name" required="required" placeholder="{{ translations[page.lang].contact.placeholders.name }}">
-        <label for="input-name" class="form-label">{{ translations[page.lang].contact.labels.name }} *</label>
-      </div>
+        <div class="form-floating mb-3">
+          <input class="form-control" type="text" name="name" required="required" placeholder="{{ translations[page.lang].contact.placeholders.name }}">
+          <label for="input-name" class="form-label">{{ translations[page.lang].contact.labels.name }} *</label>
+        </div>
 
-      <div class="form-floating mb-3">
-        <input id="input-email" class="form-control" type="email" name="email" required="required" placeholder="{{ translations[page.lang].contact.placeholders.email }}">
-        <label for="input-email" class="form-label">{{ translations[page.lang].contact.labels.email }} *</label>
-      </div>
+        <div class="form-floating mb-3">
+          <input class="form-control" type="email" name="email" required="required" placeholder="{{ translations[page.lang].contact.placeholders.email }}">
+          <label for="input-email" class="form-label">{{ translations[page.lang].contact.labels.email }} *</label>
+        </div>
 
-      <div class="form-floating mb-3">
-        <input id="input-subject" class="form-control" type="text" name="subject" required="required" placeholder="{{ translations[page.lang].contact.placeholders.subject }}">
-        <label for="input-subject" class="form-label">{{ translations[page.lang].contact.labels.subject }} *</label>
-      </div>
+        <div class="form-floating mb-3">
+          <input class="form-control" type="text" name="subject" required="required" placeholder="{{ translations[page.lang].contact.placeholders.subject }}">
+          <label for="input-subject" class="form-label">{{ translations[page.lang].contact.labels.subject }} *</label>
+        </div>
 
-      <div class="form-floating mb-3">
-        <textarea id="input-message" class="form-control" name="message" required="required" placeholder="{{ translations[page.lang].contact.placeholders.message }}" style="height: 200px"></textarea>
-        <label for="input-message" class="form-label">{{ translations[page.lang].contact.labels.message }} *</label>
-      </div>
+        <div class="form-floating mb-3">
+          <textarea class="form-control" name="message" required="required" placeholder="{{ translations[page.lang].contact.placeholders.message }}" style="height: 200px"></textarea>
+          <label for="input-message" class="form-label">{{ translations[page.lang].contact.labels.message }} *</label>
+        </div>
 
-      <input type="hidden" name="_gotcha">
-      <input type="hidden" id="captcha-response" name="g-recaptcha-response">
+        <input type="hidden" name="_gotcha">
+        <input type="hidden" id="captcha-response" name="g-recaptcha-response">
 
-      <button id="contact-form-submit" class="btn btn-primary text-light" type="submit">{{ translations[page.lang].contact.labels.submit }}</button>
+        <div class="d-flex">
+          <div class="my-auto me-2">
+            <button class="btn btn-primary text-light" type="submit">{{ translations[page.lang].contact.labels.submit }}</button>
+          </div>
+
+          <div class="spinner my-auto d-none">
+            <i class="fas fa-circle-notch fa-spin"></i>
+          </div>
+        </div>
+      </fieldset>
     </form>
   </div>
 </section>

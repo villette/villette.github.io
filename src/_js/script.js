@@ -1,5 +1,8 @@
 window.addEventListener('DOMContentLoaded', () => {
 
+  // Import FontAwesome icons
+  import('./modules/icons.mjs').then(icons => icons.default());
+
   // Generate mailto link
   import('./modules/mailto.mjs').then(mailto => mailto.default());
 
