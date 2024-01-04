@@ -3,16 +3,16 @@
     <h2 class="mb-5">{{ translations[page.lang].contact.title }}</h2>
 
     <form id="contact-form" action="https://formcarry.com/s/WMrdOCSAvlF" method="post" accept-charset="UTF-8">
-      <fieldset>
-        <div class="toast-container position-fixed top-0 end-0 p-3" data-bs-theme="dark">
-          <div class="toast align-items-center border-0 text-light" role="alert" aria-live="assertive" aria-atomic="true">
-            <div class="d-flex">
-              <div class="toast-body" data-success="{{ translations[page.lang].contact.success }}" data-danger="{{ translations[page.lang].contact.error }}"></div>
-              <button type="button" class="btn-close me-2 m-auto" data-bs-dismiss="toast" aria-label="Close"></button>
-            </div>
+      <div class="toast-container position-fixed top-0 end-0 p-3" data-bs-theme="dark">
+        <div class="toast align-items-center border-0 text-light" role="alert" aria-live="assertive" aria-atomic="true">
+          <div class="d-flex">
+            <div class="toast-body" data-success="{{ translations[page.lang].contact.success }}" data-danger="{{ translations[page.lang].contact.error }}"></div>
+            <button type="button" class="btn-close me-2 m-auto" data-bs-dismiss="toast" aria-label="Close"></button>
           </div>
         </div>
+      </div>
 
+      <fieldset>
         <div class="form-floating mb-3">
           <input class="form-control" type="text" name="name" required="required" placeholder="{{ translations[page.lang].contact.placeholders.name }}">
           <label for="input-name" class="form-label">{{ translations[page.lang].contact.labels.name }} *</label>
