@@ -11,6 +11,9 @@ export default () => {
     const toastElement = contactForm.querySelector('.toast');
     const toastBody = toastElement.querySelector('.toast-body');
 
+    const contactFormReload = contactForm.querySelector('.reload');
+    const contactFormReloadCountdown = contactFormReload.querySelector('.countdown');
+
     toastElement.classList.remove('bg-success', 'bg-danger');
     toastElement.classList.add(`bg-${messageType}`);
     toastBody.textContent = toastBody.getAttribute(`data-${messageType}`);
@@ -18,28 +21,37 @@ export default () => {
     Toast.getOrCreateInstance(toastElement).show();
 
     contactFormSpinner.classList.add('d-none');
+    contactForm.classList.remove('was-validated');
 
     if (response?.code == 200) {
       contactForm.reset();
+    }
 
-      initCaptcha();
-      contactForm.classList.remove('was-validated');
-      contactFormFieldset.removeAttribute('disabled');
-    } else {
-      setTimeout(() => {
+    contactFormReload.classList.remove('d-none');
+
+    let seconds = 15;
+    contactFormReloadCountdown.textContent = seconds--;
+
+    const countdown = setInterval(() => {
+      contactFormReloadCountdown.textContent = seconds--;
+
+      if (seconds < 0) {
+        clearInterval(countdown);
+
         initCaptcha();
         contactFormFieldset.removeAttribute('disabled');
-      }, 15000);
-    }
+        contactFormReload.classList.add('d-none');
+      }
+    }, 1000);
   };
 
   contactForm.addEventListener('submit', (event) => {
     if (!contactForm.checkValidity()) {
       event.preventDefault();
       event.stopImmediatePropagation();
-    }
 
-    contactForm.classList.add('was-validated');
+      contactForm.classList.add('was-validated');
+    }
   });
 
   contactForm.addEventListener('submit', (event) => {
