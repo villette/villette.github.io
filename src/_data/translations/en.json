@@ -214,6 +214,7 @@
     "title": "Contact",
     "success": "Your message has been sent successfully.",
     "error": "An error occurred, please try again later.",
+    "required": "This field is required",
     "labels": {
       "name": "Your name",
       "email": "Your email address",

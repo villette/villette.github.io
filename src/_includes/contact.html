@@ -16,25 +16,25 @@
         <div class="form-floating mb-3">
           <input class="form-control" type="text" name="name" required="required" placeholder="{{ translations[page.lang].contact.placeholders.name }}">
           <label for="input-name" class="form-label">{{ translations[page.lang].contact.labels.name }} *</label>
-          <div class="invalid-feedback">This field is required</div>
+          <div class="invalid-feedback">{{ translations[page.lang].contact.required }}</div>
         </div>
 
         <div class="form-floating mb-3">
           <input class="form-control" type="email" name="email" required="required" placeholder="{{ translations[page.lang].contact.placeholders.email }}">
           <label for="input-email" class="form-label">{{ translations[page.lang].contact.labels.email }} *</label>
-          <div class="invalid-feedback">This field is required</div>
+          <div class="invalid-feedback">{{ translations[page.lang].contact.required }}</div>
         </div>
 
         <div class="form-floating mb-3">
           <input class="form-control" type="text" name="subject" required="required" placeholder="{{ translations[page.lang].contact.placeholders.subject }}">
           <label for="input-subject" class="form-label">{{ translations[page.lang].contact.labels.subject }} *</label>
-          <div class="invalid-feedback">This field is required</div>
+          <div class="invalid-feedback">{{ translations[page.lang].contact.required }}</div>
         </div>
 
         <div class="form-floating mb-3">
           <textarea class="form-control" name="message" required="required" placeholder="{{ translations[page.lang].contact.placeholders.message }}" style="height: 200px"></textarea>
           <label for="input-message" class="form-label">{{ translations[page.lang].contact.labels.message }} *</label>
-          <div class="invalid-feedback">This field is required</div>
+          <div class="invalid-feedback">{{ translations[page.lang].contact.required }}</div>
         </div>
 
         <input type="hidden" name="_gotcha">

@@ -213,6 +213,7 @@
     "title": "Contact",
     "success": "Votre message a bien été envoyé.",
     "error": "Une erreur est apparue, veuillez réessayer plus tard.",
+    "required": "Ce champ est requis",
     "labels": {
       "name": "Nom",
       "email": "Adresse courriel",
