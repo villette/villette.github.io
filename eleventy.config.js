@@ -4,6 +4,10 @@ const eleventySass = require('eleventy-sass');
 const esbuild = require('esbuild');
 
 module.exports = (eleventyConfig) => {
+  eleventyConfig.setServerOptions({
+    port: 8000,
+  });
+
   eleventyConfig.addPlugin(EleventyI18nPlugin, {
     defaultLanguage: 'en',
   });
