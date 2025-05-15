@@ -18,6 +18,10 @@ export default () => {
     toastElement.classList.add(`bg-${messageType}`);
     toastBody.textContent = toastBody.getAttribute(`data-${messageType}`);
 
+    if (response?.code != 200 && response?.message) {
+      toastBody.textContent += ` (${response.message})`;
+    }
+
     Toast.getOrCreateInstance(toastElement).show();
 
     contactFormSpinner.classList.add('d-none');
